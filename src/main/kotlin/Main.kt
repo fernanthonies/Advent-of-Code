@@ -1,7 +1,7 @@
 import java.io.File
 
-fun main(args: Array<String>) {
-    dayOne()
+fun main() {
+    dayOne(readFile("input/dayOne.txt"))
 }
 
 fun dayOne(input: List<String>) {
@@ -16,9 +16,10 @@ fun dayOne(input: List<String>) {
             tempTotal = 0
         }
     }
+    
     sumList.sort()
-    println("Highest calorie count is ${sumList.last()}")
-    println("Sum of top three is ${sumList.takeLast(3).sum()}")
+    println("Highest calorie count=${sumList.last()}")
+    println("Sum of top three=${sumList.takeLast(3).sum()}")
 }
 
 fun readFile(fileName: String): List<String> {
