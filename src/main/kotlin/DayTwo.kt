@@ -22,22 +22,13 @@ fun partTwo(input: List<String>) {
 
     input.map { it.split(" ") }.forEach { round ->
         val them = Choice.fromString(round[0])
-        val result = resultFromString(round[1])
+        val result = RoundResult.fromString(round[1])
         val me = them.fromResult(result)
 
         score += me.score() + result.score()
     }
 
     println("part two=${score}")
-}
-
-fun resultFromString(input: String): RoundResult {
-    return when(input) {
-        "X" -> RoundResult.Lose
-        "Y" -> RoundResult.Draw
-        "Z" -> RoundResult.Win
-        else -> RoundResult.Lose
-    }
 }
 
 enum class Choice {
@@ -127,4 +118,15 @@ enum class RoundResult {
     };
 
     abstract fun score(): Int
+
+    companion object {
+        fun fromString(input: String): RoundResult {
+            return when(input) {
+                "X" -> Lose
+                "Y" -> Draw
+                "Z" -> Win
+                else -> Lose
+            }
+        }
+    }
 }
