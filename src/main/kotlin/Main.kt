@@ -1,11 +1,24 @@
 import java.io.File
 
 fun main(args: Array<String>) {
-    println("Hello World!")
+    dayOne()
+}
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun dayOne(input: List<String>) {
+    val sumList = mutableListOf<Int>()
+    var tempTotal = 0
+
+    input.forEach { line ->
+        line.toIntOrNull()?.let {
+            tempTotal += it
+        }?:run {
+            sumList.add(tempTotal)
+            tempTotal = 0
+        }
+    }
+    sumList.sort()
+    println("Highest calorie count is ${sumList.last()}")
+    println("Sum of top three is ${sumList.takeLast(3).sum()}")
 }
 
 fun readFile(fileName: String): List<String> {
