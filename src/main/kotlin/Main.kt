@@ -1,8 +1,9 @@
+import Days.dayThree
 import java.io.File
 
 fun main() {
-    //dayOne(readFile("input/dayOne.txt"))
-    //dayTwo(readFile("input/dayTwo.txt"))
+    //Days.dayOne(readFile("input/dayOne.txt"))
+    //Days.dayTwo(readFile("input/dayTwo.txt"))
     dayThree(readFile("input/dayThree.txt"))
 }
 

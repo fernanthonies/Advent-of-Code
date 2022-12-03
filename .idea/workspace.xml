@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DayThree.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DayOne.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Days/DayOne.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DayThree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Days/DayThree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DayTwo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Days/DayTwo.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +48,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/Days" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />

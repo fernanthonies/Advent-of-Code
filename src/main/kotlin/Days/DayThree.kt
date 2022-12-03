@@ -1,3 +1,5 @@
+package Days
+
 fun dayThree(input: List<String>) {
     partOne(input.map { splitString(it) })
     partTwo(input.chunked(3))

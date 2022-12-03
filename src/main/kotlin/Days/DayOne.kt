@@ -1,3 +1,5 @@
+package Days
+
 fun dayOne(input: List<String>) {
     val sumList = mutableListOf<Int>()
     var tempTotal = 0

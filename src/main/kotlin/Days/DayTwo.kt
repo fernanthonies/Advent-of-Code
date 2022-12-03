@@ -1,3 +1,5 @@
+package Days
+
 fun dayTwo(input: List<String>) {
     partOne(input)
     partTwo(input)
