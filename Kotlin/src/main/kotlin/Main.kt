@@ -1,10 +1,11 @@
-import Days.dayThree
+import days.dayFour
 import java.io.File
 
 fun main() {
-    //Days.dayOne(readFile("../input/dayOne.txt"))
-    //Days.dayTwo(readFile("../input/dayTwo.txt"))
-    dayThree(readFile("../input/dayThree.txt"))
+    //dayOne(readFile("../input/dayOne.txt"))
+    //dayTwo(readFile("../input/dayTwo.txt"))
+    //dayThree(readFile("../input/dayThree.txt"))
+    dayFour(readFile("../input/dayFour.txt"))
 }
 
 fun readFile(fileName: String): List<String> {

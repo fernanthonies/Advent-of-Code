@@ -1,4 +1,4 @@
-package Days
+package days
 
 fun dayOne(input: List<String>) {
     val sumList = mutableListOf<Int>()

@@ -1,4 +1,4 @@
-package Days
+package days
 
 fun dayTwo(input: List<String>) {
     partOne(input)

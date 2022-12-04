@@ -1,4 +1,4 @@
-package Days
+package days
 
 fun dayThree(input: List<String>) {
     partOne(input.map { splitString(it) })
