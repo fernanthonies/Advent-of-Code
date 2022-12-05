@@ -1,19 +1,35 @@
 package days
 
-fun dayOne(input: List<String>) {
-    val sumList = mutableListOf<Int>()
-    var tempTotal = 0
+class DayOne(input: List<String>) : BaseDay(input) {
 
-    input.forEach { line ->
-        line.toIntOrNull()?.let {
-            tempTotal += it
-        }?:run {
-            sumList.add(tempTotal)
-            tempTotal = 0
-        }
+    private val solvedList: List<Int>
+
+    init {
+        solvedList = calculateList(input)
     }
 
-    sumList.sort()
-    println("Highest calorie count=${sumList.last()}")
-    println("Sum of top three=${sumList.takeLast(3).sum()}")
+    override fun solvePartOne(): Int {
+        return solvedList.last()
+    }
+
+    override fun solvePartTwo(): Int {
+        return solvedList.takeLast(3).sum()
+    }
+
+    private fun calculateList(input: List<String>): List<Int> {
+        val sumList = mutableListOf<Int>()
+        var tempTotal = 0
+
+        input.forEach { line ->
+            line.toIntOrNull()?.let {
+                tempTotal += it
+            }?:run {
+                sumList.add(tempTotal)
+                tempTotal = 0
+            }
+        }
+
+        sumList.sort()
+        return sumList
+    }
 }
