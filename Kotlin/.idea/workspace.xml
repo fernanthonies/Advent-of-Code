@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../input/dayFour.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../input/dayOne.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../input/dayThree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../input/dayTwo.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +69,7 @@
       <recent name="days" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DayTwoTest">
+  <component name="RunManager" selected="JUnit.kotlin in AoC_2022">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -126,23 +121,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayOneTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH" value="Kotlin SDK" />
-      <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayOneTest" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DayOneTest.test_solve_part_one" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
@@ -190,20 +168,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="kotlin in AoC_2022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC_2022" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.DayOneTest" />
       <item itemvalue="JUnit.DayTwoTest" />
+      <item itemvalue="JUnit.kotlin in AoC_2022" />
       <item itemvalue="JUnit.DayOneTest.test_solve_part_one" />
       <item itemvalue="JUnit.DayTwoTest.test" />
-      <item itemvalue="JUnit.DayOneTest.solvePartOne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.kotlin in AoC_2022" />
         <item itemvalue="JUnit.DayTwoTest" />
         <item itemvalue="JUnit.DayOneTest" />
         <item itemvalue="JUnit.DayOneTest.test_solve_part_one" />
         <item itemvalue="JUnit.DayTwoTest.test" />
-        <item itemvalue="JUnit.DayOneTest.solvePartOne" />
       </list>
     </recent_temporary>
   </component>
