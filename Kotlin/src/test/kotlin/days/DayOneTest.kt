@@ -16,13 +16,13 @@ class DayOneTest {
     @Test
     fun solvePartOne() {
         val result = subject.solvePartOne()
-        assertEquals(24000, result)
+        assertEquals("24000", result)
     }
 
     @Test
     fun solvePartTwo() {
         val result = subject.solvePartTwo()
-        assertEquals(45000, result)
+        assertEquals("45000", result)
     }
 
     private val inputString = "1000\n" +

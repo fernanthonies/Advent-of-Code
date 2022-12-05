@@ -6,6 +6,6 @@ abstract class BaseDay(protected val input: List<String>): IDay {
         println("Part two solution=${solvePartTwo()}")
     }
 
-    abstract override fun solvePartOne(): Int
-    abstract override fun solvePartTwo(): Int
+    abstract override fun solvePartOne(): String
+    abstract override fun solvePartTwo(): String
 }

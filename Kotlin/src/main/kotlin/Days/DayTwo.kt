@@ -1,7 +1,7 @@
 package days
 
 class DayTwo(input: List<String>) : BaseDay(input) {
-    override fun solvePartOne(): Int {
+    override fun solvePartOne(): String {
         var score = 0
 
         input.map { it.split(" ") }.forEach { round ->
@@ -11,10 +11,10 @@ class DayTwo(input: List<String>) : BaseDay(input) {
 
             score += me.score() + result.score()
         }
-        return score
+        return score.toString()
     }
 
-    override fun solvePartTwo(): Int {
+    override fun solvePartTwo(): String {
         var score = 0
 
         input.map { it.split(" ") }.forEach { round ->
@@ -24,7 +24,7 @@ class DayTwo(input: List<String>) : BaseDay(input) {
 
             score += me.score() + result.score()
         }
-        return score
+        return score.toString()
     }
 
     enum class Choice {

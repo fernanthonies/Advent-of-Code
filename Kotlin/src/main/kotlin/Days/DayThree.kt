@@ -1,20 +1,20 @@
 package days
 
 class DayThree(input: List<String>) : BaseDay(input) {
-    override fun solvePartOne(): Int {
+    override fun solvePartOne(): String {
         var total = 0
         input.map { splitString(it) }.forEach { linePair ->
             total += priority(findSharedChar(linePair))
         }
-        return total
+        return total.toString()
     }
 
-    override fun solvePartTwo(): Int {
+    override fun solvePartTwo(): String {
         var total = 0
         input.chunked(3).forEach { chunk ->
             total += priority(findBadgeChar(chunk))
         }
-        return total
+        return total.toString()
     }
 
     private fun findSharedChar(input: Pair<String, String>): Char {

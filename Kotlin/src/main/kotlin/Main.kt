@@ -13,10 +13,6 @@ fun main(args: Array<String>) {
         else -> throw Error()
     }
     day.solve()
-    //dayOne(readFile("../input/dayOne.txt"))
-    //dayTwo(readFile("../input/dayTwo.txt"))
-    //dayThree(readFile("../input/dayThree.txt"))
-    //dayFour(readFile("../input/dayFour.txt"))
 }
 
 fun readFile(fileName: String): List<String> {

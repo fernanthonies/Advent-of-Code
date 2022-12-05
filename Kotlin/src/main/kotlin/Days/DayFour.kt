@@ -1,7 +1,7 @@
 package days
 
 class DayFour(input: List<String>) : BaseDay(input) {
-    override fun solvePartOne(): Int {
+    override fun solvePartOne(): String {
         var containsTotal = 0
 
         input.forEach {line ->
@@ -13,10 +13,10 @@ class DayFour(input: List<String>) : BaseDay(input) {
             }
         }
 
-        return containsTotal
+        return containsTotal.toString()
     }
 
-    override fun solvePartTwo(): Int {
+    override fun solvePartTwo(): String {
         var overlapsTotal = 0
 
         input.forEach {line ->
@@ -28,7 +28,7 @@ class DayFour(input: List<String>) : BaseDay(input) {
             }
         }
 
-        return overlapsTotal
+        return overlapsTotal.toString()
     }
 
     fun Pair<Int, Int>.contains(other: Pair<Int, Int>): Boolean {

@@ -17,13 +17,13 @@ class DayTwoTest {
     @Test
     fun solvePartOne() {
         val result = subject.solvePartOne()
-        assertEquals(15, result)
+        assertEquals("15", result)
     }
 
     @Test
     fun solvePartTwo() {
         val result = subject.solvePartTwo()
-        assertEquals(12, result)
+        assertEquals("12", result)
     }
 
     private val inputString = "A Y\n" +

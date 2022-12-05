@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="" />
+    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../input/day5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../input/day5.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +71,7 @@
       <recent name="days" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.kotlin in AoC_2022">
+  <component name="RunManager" selected="JUnit.DayFiveTest">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -106,7 +108,7 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="DayOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayFiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +117,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayOneTest" />
+      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayOneTest.test_solve_part_one" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayFiveTest.perform9000Move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -130,14 +132,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayOneTest" />
-      <option name="METHOD_NAME" value="test_solve_part_one" />
+      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
+      <option name="METHOD_NAME" value="perform9000Move" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayFiveTest.perform9001Move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -146,50 +148,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayTwoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DayTwoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayTwoTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
+      <option name="METHOD_NAME" value="perform9001Move" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kotlin in AoC_2022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayFiveTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/kotlin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="days" />
+      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
+      <option name="METHOD_NAME" value="solvePartTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="AoC_2022" />
+      <option name="PROGRAM_PARAMETERS" value="5" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DayOneTest" />
-      <item itemvalue="JUnit.DayTwoTest" />
-      <item itemvalue="JUnit.kotlin in AoC_2022" />
-      <item itemvalue="JUnit.DayOneTest.test_solve_part_one" />
-      <item itemvalue="JUnit.DayTwoTest.test" />
+      <item itemvalue="JUnit.DayFiveTest" />
+      <item itemvalue="JUnit.DayFiveTest.perform9000Move" />
+      <item itemvalue="JUnit.DayFiveTest.perform9001Move" />
+      <item itemvalue="JUnit.DayFiveTest.solvePartTwo" />
+      <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.kotlin in AoC_2022" />
-        <item itemvalue="JUnit.DayTwoTest" />
-        <item itemvalue="JUnit.DayOneTest" />
-        <item itemvalue="JUnit.DayOneTest.test_solve_part_one" />
-        <item itemvalue="JUnit.DayTwoTest.test" />
+        <item itemvalue="JUnit.DayFiveTest" />
+        <item itemvalue="JUnit.DayFiveTest.perform9001Move" />
+        <item itemvalue="JUnit.DayFiveTest.perform9000Move" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.DayFiveTest.solvePartTwo" />
       </list>
     </recent_temporary>
   </component>

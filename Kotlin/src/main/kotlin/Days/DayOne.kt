@@ -8,12 +8,12 @@ class DayOne(input: List<String>) : BaseDay(input) {
         solvedList = calculateList(input)
     }
 
-    override fun solvePartOne(): Int {
-        return solvedList.last()
+    override fun solvePartOne(): String {
+        return solvedList.last().toString()
     }
 
-    override fun solvePartTwo(): Int {
-        return solvedList.takeLast(3).sum()
+    override fun solvePartTwo(): String {
+        return solvedList.takeLast(3).sum().toString()
     }
 
     private fun calculateList(input: List<String>): List<Int> {
