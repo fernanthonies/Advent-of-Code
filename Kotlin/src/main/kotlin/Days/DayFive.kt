@@ -49,7 +49,7 @@ class DayFive(input: List<String>) : BaseDay(input) {
 
     fun parseStacks(input: List<String>): List<Deque<Char>> {
         val result = mutableListOf<Deque<Char>>()
-        val stackLines = input.map { it.toCharArray().toList().chunked(4).map { chunk -> chunk[1] } }.reversed()
+        val stackLines = input.map { it.toList().chunked(4).map { chunk -> chunk[1] } }.reversed()
         val stackCount = stackLines.first().count()
 
         for (i in 1..stackCount) {
