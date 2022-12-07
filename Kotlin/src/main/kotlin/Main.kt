@@ -12,6 +12,7 @@ fun main(args: Array<String>) {
         4 -> DayFour(input)
         5 -> DayFive(input)
         6 -> DaySix(input)
+        7 -> DaySeven(input)
         else -> throw Error()
     }
     day.solve()
