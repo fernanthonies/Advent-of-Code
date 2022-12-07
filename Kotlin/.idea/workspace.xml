@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../input/day5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../input/day5.txt" afterDir="false" />
-    </list>
+    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +69,7 @@
       <recent name="days" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DayFiveTest">
+  <component name="RunManager" selected="JUnit.DaySevenTest">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -108,7 +106,7 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="DayFiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaySevenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +115,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
+      <option name="MAIN_CLASS_NAME" value="days.DaySevenTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayFiveTest.perform9000Move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaySevenTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -132,14 +130,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
-      <option name="METHOD_NAME" value="perform9000Move" />
+      <option name="MAIN_CLASS_NAME" value="days.DaySevenTest" />
+      <option name="METHOD_NAME" value="solvePartOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayFiveTest.perform9001Move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaySevenTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -148,24 +146,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
-      <option name="METHOD_NAME" value="perform9001Move" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DayFiveTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayFiveTest" />
+      <option name="MAIN_CLASS_NAME" value="days.DaySevenTest" />
       <option name="METHOD_NAME" value="solvePartTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaySixTest.findMessageStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC_2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="days" />
+      <option name="MAIN_CLASS_NAME" value="days.DaySixTest" />
+      <option name="METHOD_NAME" value="findMessageStart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,26 +172,26 @@
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AoC_2022" />
-      <option name="PROGRAM_PARAMETERS" value="5" />
+      <option name="PROGRAM_PARAMETERS" value="7" />
       <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DayFiveTest" />
-      <item itemvalue="JUnit.DayFiveTest.perform9000Move" />
-      <item itemvalue="JUnit.DayFiveTest.perform9001Move" />
-      <item itemvalue="JUnit.DayFiveTest.solvePartTwo" />
+      <item itemvalue="JUnit.DaySevenTest" />
+      <item itemvalue="JUnit.DaySevenTest.solvePartOne" />
+      <item itemvalue="JUnit.DaySevenTest.solvePartTwo" />
+      <item itemvalue="JUnit.DaySixTest.findMessageStart" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DayFiveTest" />
-        <item itemvalue="JUnit.DayFiveTest.perform9001Move" />
-        <item itemvalue="JUnit.DayFiveTest.perform9000Move" />
+        <item itemvalue="JUnit.DaySevenTest" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="JUnit.DayFiveTest.solvePartTwo" />
+        <item itemvalue="JUnit.DaySevenTest.solvePartTwo" />
+        <item itemvalue="JUnit.DaySevenTest.solvePartOne" />
+        <item itemvalue="JUnit.DaySixTest.findMessageStart" />
       </list>
     </recent_temporary>
   </component>
@@ -207,5 +205,25 @@
       <updated>1669926242600</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/days/DaySeven.kt</url>
+          <line>63</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="mySize()" />
+        <watch expression="children.filter { it.type == ENode.NodeType.Directory }.sumOf { it.navigate() }" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
