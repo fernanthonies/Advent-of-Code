@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="" />
+    <list default="true" id="aeaab340-0d15-4371-8440-3a8d83e162f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../input/day8.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.35214448&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.debugger.capture&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35214448",
+    "settings.editor.selected.configurable": "reference.idesettings.debugger.capture"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/Days" />
@@ -69,7 +71,7 @@
       <recent name="days" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DaySevenTest">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -106,6 +108,38 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="DayEightTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC_2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="days" />
+      <option name="MAIN_CLASS_NAME" value="days.DayEightTest" />
+      <option name="METHOD_NAME" value="solvePartOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DayEightTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC_2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="days" />
+      <option name="MAIN_CLASS_NAME" value="days.DayEightTest" />
+      <option name="METHOD_NAME" value="solvePartTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DaySevenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
@@ -117,22 +151,6 @@
       <option name="PACKAGE_NAME" value="days" />
       <option name="MAIN_CLASS_NAME" value="days.DaySevenTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DaySevenTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DaySevenTest" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,45 +171,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaySixTest.findMessageStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DaySixTest" />
-      <option name="METHOD_NAME" value="findMessageStart" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AoC_2022" />
-      <option name="PROGRAM_PARAMETERS" value="7" />
+      <option name="PROGRAM_PARAMETERS" value="8" />
       <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.DayEightTest.solvePartTwo" />
+      <item itemvalue="JUnit.DayEightTest.solvePartOne" />
       <item itemvalue="JUnit.DaySevenTest" />
-      <item itemvalue="JUnit.DaySevenTest.solvePartOne" />
       <item itemvalue="JUnit.DaySevenTest.solvePartTwo" />
-      <item itemvalue="JUnit.DaySixTest.findMessageStart" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaySevenTest" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.DayEightTest.solvePartTwo" />
+        <item itemvalue="JUnit.DayEightTest.solvePartOne" />
+        <item itemvalue="JUnit.DaySevenTest" />
         <item itemvalue="JUnit.DaySevenTest.solvePartTwo" />
-        <item itemvalue="JUnit.DaySevenTest.solvePartOne" />
-        <item itemvalue="JUnit.DaySixTest.findMessageStart" />
       </list>
     </recent_temporary>
   </component>
@@ -211,11 +213,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/days/DaySeven.kt</url>
-          <line>63</line>
+          <line>67</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/days/DayEight.kt</url>
+          <line>77</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -223,6 +230,7 @@
       <configuration name="JUnit">
         <watch expression="mySize()" />
         <watch expression="children.filter { it.type == ENode.NodeType.Directory }.sumOf { it.navigate() }" />
+        <watch expression="input.joinToString(&quot;&quot;)" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
