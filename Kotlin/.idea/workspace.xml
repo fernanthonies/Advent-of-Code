@@ -42,22 +42,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.35214448",
-    "settings.editor.selected.configurable": "reference.idesettings.debugger.capture"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.35214448&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.debugger.capture&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/Days" />
@@ -69,7 +69,7 @@
       <recent name="days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="JUnit.DayTenTest.solvePartTwo">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -106,7 +106,7 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="DayEightTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayEightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -116,29 +116,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="days" />
       <option name="MAIN_CLASS_NAME" value="days.DayEightTest" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayEightTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayEightTest" />
-      <option name="METHOD_NAME" value="solvePartTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DayNineTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayNineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -148,13 +131,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="days" />
       <option name="MAIN_CLASS_NAME" value="days.DayNineTest" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayNineTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DayTenTest.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC_2022" />
       <extension name="coverage">
         <pattern>
@@ -163,7 +145,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="days" />
-      <option name="MAIN_CLASS_NAME" value="days.DayNineTest" />
+      <option name="MAIN_CLASS_NAME" value="days.DayTenTest" />
+      <option name="METHOD_NAME" value="solvePartOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DayTenTest.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC_2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="days" />
+      <option name="MAIN_CLASS_NAME" value="days.DayTenTest" />
       <option name="METHOD_NAME" value="solvePartTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -173,26 +171,26 @@
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AoC_2022" />
-      <option name="PROGRAM_PARAMETERS" value="9" />
+      <option name="PROGRAM_PARAMETERS" value="10" />
       <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DayNineTest.solvePartOne" />
-      <item itemvalue="JUnit.DayNineTest.solvePartTwo" />
-      <item itemvalue="JUnit.DayEightTest.solvePartTwo" />
-      <item itemvalue="JUnit.DayEightTest.solvePartOne" />
+      <item itemvalue="JUnit.DayEightTest" />
+      <item itemvalue="JUnit.DayNineTest" />
+      <item itemvalue="JUnit.DayTenTest.solvePartTwo" />
+      <item itemvalue="JUnit.DayTenTest.solvePartOne" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DayTenTest.solvePartTwo" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="JUnit.DayNineTest.solvePartTwo" />
-        <item itemvalue="JUnit.DayNineTest.solvePartOne" />
-        <item itemvalue="JUnit.DayEightTest.solvePartTwo" />
-        <item itemvalue="JUnit.DayEightTest.solvePartOne" />
+        <item itemvalue="JUnit.DayTenTest.solvePartOne" />
+        <item itemvalue="JUnit.DayEightTest" />
+        <item itemvalue="JUnit.DayNineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,16 +222,17 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/days/DayNine.kt</url>
-          <line>58</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/days/DayNine.kt</url>
-          <line>32</line>
-          <option name="timeStamp" value="67" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/days/DayTen.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="array[i]" />
+        <watch expression="array[i + 1]" language="kotlin" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

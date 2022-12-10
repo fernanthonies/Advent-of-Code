@@ -1,6 +1,6 @@
 package days
 
-class DayNine(input: List<String>) : BaseDay(input)  {
+class DayNine(input: List<String>) : BaseDay(input) {
 
     override fun solvePartOne(): String {
         val head = Point(0, 0)
