@@ -19,7 +19,7 @@ class DayOneTest {
     fun solvePartTwo() {
         subject = DayOne(inputStringTwo.split("\n"))
         val result = subject.solvePartTwo()
-        assertEquals("88", result)
+        assertEquals("281", result)
     }
 
     private val inputStringOne = "1abc2\n" +
@@ -27,5 +27,11 @@ class DayOneTest {
             "a1b2c3d4e5f\n" +
             "treb7uchet"
 
-    private val inputStringTwo = "abcoeightxyz"
+    private val inputStringTwo = "two1nine\n" +
+            "eightwothree\n" +
+            "abcone2threexyz\n" +
+            "xtwone3four\n" +
+            "4nineeightseven2\n" +
+            "zoneight234\n" +
+            "7pqrstsixteen"
 }
