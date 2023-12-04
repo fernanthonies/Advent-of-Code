@@ -1,5 +1,6 @@
-package days
+package year2022.days
 
+import year2022.Days.DayOne
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*

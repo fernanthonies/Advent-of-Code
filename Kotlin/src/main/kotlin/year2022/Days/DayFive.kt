@@ -1,5 +1,6 @@
-package days
+package year2022.Days
 
+import BaseDay
 import java.util.*
 
 class DayFive(input: List<String>) : BaseDay(input) {

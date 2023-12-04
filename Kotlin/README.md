@@ -1,4 +1,4 @@
-# Advent of Code 2022
+# Advent of Code year2022
 ## Solutions
 [Day One](src/main/kotlin/days/DayOne.kt)
 

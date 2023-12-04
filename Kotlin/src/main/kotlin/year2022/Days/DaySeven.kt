@@ -1,4 +1,6 @@
-package days
+package year2022.Days
+
+import BaseDay
 
 class DaySeven(input: List<String>) : BaseDay(input) {
 

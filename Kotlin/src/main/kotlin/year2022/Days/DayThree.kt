@@ -1,4 +1,6 @@
-package days
+package year2022.Days
+
+import BaseDay
 
 class DayThree(input: List<String>) : BaseDay(input) {
     override fun solvePartOne(): String {

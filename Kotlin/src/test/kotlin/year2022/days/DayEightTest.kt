@@ -1,9 +1,10 @@
-package days
+package year2022.days
 
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
+import year2022.Days.DayEight
 
 class DayEightTest {
 

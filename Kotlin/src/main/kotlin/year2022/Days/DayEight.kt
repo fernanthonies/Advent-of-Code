@@ -1,4 +1,6 @@
-package days
+package year2022.Days
+
+import BaseDay
 
 class DayEight(input: List<String>) : BaseDay(input) {
     private val treeArray: IntArray

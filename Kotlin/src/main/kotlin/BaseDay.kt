@@ -1,5 +1,4 @@
-package days
-
+import days.IDay
 import kotlin.system.measureTimeMillis
 
 abstract class BaseDay(protected val input: List<String>): IDay {
