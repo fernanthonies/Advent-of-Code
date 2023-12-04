@@ -1,4 +1,8 @@
 # Advent of Code
+## 2023 Solutions
+[Day One](src/main/kotlin/year2023/days/DayOne.kt)  
+[Day Two](src/main/kotlin/year2023/days/DayTwo.kt)  
+[Day Three](src/main/kotlin/year2023/days/DayThree.kt)
 ## 2022 Solutions
 [Day One](src/main/kotlin/year2022/days/DayOne.kt)  
 [Day Two](src/main/kotlin/year2022/days/DayTwo.kt)  
@@ -10,8 +14,3 @@
 [Day Eight](src/main/kotlin/year2022/days/DayEight.kt)  
 [Day Nine](src/main/kotlin/year2022/days/DayNine.kt)  
 [Day Ten](src/main/kotlin/year2022/days/DayTen.kt)
-
-## 2023 Solutions
-[Day One](src/main/kotlin/year2023/days/DayOne.kt)  
-[Day Two](src/main/kotlin/year2023/days/DayTwo.kt)  
-[Day Three](src/main/kotlin/year2023/days/DayThree.kt)  
