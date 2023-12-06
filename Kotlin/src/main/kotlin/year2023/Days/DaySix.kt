@@ -4,37 +4,42 @@ import BaseDay
 
 class DaySix(input: List<String>) : BaseDay(input) {
     override fun solvePartOne(): String {
-        val times = input[0].split("[\\s,]+".toRegex()).drop(1).map { it.toInt() }
-        val distances = input[1].split("[\\s,]+".toRegex()).drop(1).map { it.toInt() }
+        val times = input[0].split("[\\s,]+".toRegex()).drop(1).map { it.toLong() }
+        val distances = input[1].split("[\\s,]+".toRegex()).drop(1).map { it.toLong() }
 
         val games = times.zip(distances).toMap()
+        return solve(games).toString()
+    }
 
-        var sum = 1
-        for (game in games) {
+    override fun solvePartTwo(): String {
+        val times = input[0].split("[\\s,]+".toRegex()).drop(1).map { it.toLong() }.joinToString("").toLong()
+        val distances = input[1].split("[\\s,]+".toRegex()).drop(1).map { it.toLong() }.joinToString("").toLong()
+
+        val games = mapOf(times to distances)
+        return solve(games).toString()
+    }
+
+    fun solve (input: Map<Long, Long>): Long {
+        var sum: Long = 1
+        for (game in input) {
             val (time, distance) = game
             val mid = time / 2
             val low = binarySearchLow(0, mid) { i ->
                 val remainingTime = time - i
                 val distanceTraveled = i * remainingTime
-                distanceTraveled >= distance
+                distanceTraveled > distance
             }
             val high = binarySearchHigh(mid, time) { i ->
                 val remainingTime = time - i
                 val distanceTraveled = i * remainingTime
-                distanceTraveled >= distance
+                distanceTraveled > distance
             }
-            println("low: $low, high: $high")
             sum *= high - low
         }
-
-        return sum.toString()
+        return sum
     }
 
-    override fun solvePartTwo(): String {
-        return ""
-    }
-
-    fun binarySearchLow(lowInput: Int, highInput: Int, test: (Int) -> Boolean): Int {
+    fun binarySearchLow(lowInput: Long, highInput: Long, test: (Long) -> Boolean): Long {
         var low = lowInput
         var high = highInput
         while (low < high) {
@@ -48,7 +53,7 @@ class DaySix(input: List<String>) : BaseDay(input) {
         return low
     }
 
-    fun binarySearchHigh(lowInput: Int, highInput: Int, test: (Int) -> Boolean): Int {
+    fun binarySearchHigh(lowInput: Long, highInput: Long, test: (Long) -> Boolean): Long {
         var low = lowInput
         var high = highInput
         while (low < high) {
@@ -59,6 +64,6 @@ class DaySix(input: List<String>) : BaseDay(input) {
                 high = mid
             }
         }
-        return low - 1
+        return low
     }
 }

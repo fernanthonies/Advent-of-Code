@@ -22,7 +22,7 @@ class DaySixTest {
     @Test
     fun solvePartTwo() {
         val result = subject.solvePartTwo()
-        Assertions.assertEquals("46", result)
+        Assertions.assertEquals("71503", result)
     }
 
     private val inputString =   "Time:      7  15   30\n" +
