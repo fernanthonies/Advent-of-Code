@@ -13,16 +13,17 @@ class DaySix(input: List<String>) : BaseDay(input) {
         for (game in games) {
             val (time, distance) = game
             val mid = time / 2
-            val low = binarySearch(0, mid) { i ->
+            val low = binarySearchLow(0, mid) { i ->
                 val remainingTime = time - i
                 val distanceTraveled = i * remainingTime
                 distanceTraveled >= distance
             }
-            val high = binarySearch(mid, time) { i ->
+            val high = binarySearchHigh(mid, time) { i ->
                 val remainingTime = time - i
                 val distanceTraveled = i * remainingTime
                 distanceTraveled >= distance
             }
+            println("low: $low, high: $high")
             sum *= high - low
         }
 
@@ -33,7 +34,7 @@ class DaySix(input: List<String>) : BaseDay(input) {
         return ""
     }
 
-    fun binarySearch(lowInput: Int, highInput: Int, test: (Int) -> Boolean): Int {
+    fun binarySearchLow(lowInput: Int, highInput: Int, test: (Int) -> Boolean): Int {
         var low = lowInput
         var high = highInput
         while (low < high) {
@@ -45,5 +46,19 @@ class DaySix(input: List<String>) : BaseDay(input) {
             }
         }
         return low
+    }
+
+    fun binarySearchHigh(lowInput: Int, highInput: Int, test: (Int) -> Boolean): Int {
+        var low = lowInput
+        var high = highInput
+        while (low < high) {
+            val mid = (low + high) / 2
+            if (test(mid)) {
+                low = mid + 1
+            } else {
+                high = mid
+            }
+        }
+        return low - 1
     }
 }

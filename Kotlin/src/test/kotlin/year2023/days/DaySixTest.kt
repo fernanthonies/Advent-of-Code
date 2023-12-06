@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import year2023.Days.DaySix
 
-class DaySexTest {
+class DaySixTest {
     private lateinit var subject: DaySix
 
     @BeforeEach
