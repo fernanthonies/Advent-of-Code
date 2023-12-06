@@ -21,47 +21,33 @@ class DaySix(input: List<String>) : BaseDay(input) {
 
     fun solve (input: Map<Long, Long>): Long {
         var sum: Long = 1
+        var count = 0
         for (game in input) {
             val (time, distance) = game
             val mid = time / 2
-            val low = binarySearchLow(0, mid) { i ->
+            val predicate: (Long) -> Boolean = { i ->
+                count++
                 val remainingTime = time - i
                 val distanceTraveled = i * remainingTime
                 distanceTraveled > distance
             }
-            val high = binarySearchHigh(mid, time) { i ->
-                val remainingTime = time - i
-                val distanceTraveled = i * remainingTime
-                distanceTraveled > distance
-            }
+            val low = binarySearch(0, mid, true, predicate)
+            val high = binarySearch(mid, time, false, predicate)
+            println("comparison count: $count")
             sum *= high - low
         }
         return sum
     }
 
-    fun binarySearchLow(lowInput: Long, highInput: Long, test: (Long) -> Boolean): Long {
+    fun binarySearch(lowInput: Long, highInput: Long, lhs: Boolean, test: (Long) -> Boolean): Long {
         var low = lowInput
         var high = highInput
         while (low < high) {
             val mid = (low + high) / 2
             if (test(mid)) {
-                high = mid
+                if (lhs) high = mid else low = mid + 1
             } else {
-                low = mid + 1
-            }
-        }
-        return low
-    }
-
-    fun binarySearchHigh(lowInput: Long, highInput: Long, test: (Long) -> Boolean): Long {
-        var low = lowInput
-        var high = highInput
-        while (low < high) {
-            val mid = (low + high) / 2
-            if (test(mid)) {
-                low = mid + 1
-            } else {
-                high = mid
+                if (lhs) low = mid + 1 else high = mid
             }
         }
         return low
