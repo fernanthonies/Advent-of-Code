@@ -23,7 +23,7 @@ class DaySeven(input: List<String>) : BaseDay(input) {
             if (o1.third != o2.third) {
                 o1.third - o2.third
             } else {
-                compareEqualHands(o1.first, o2.first, false)
+                compareEqualHands(o1.first, o2.first, withJokers)
             }
         }
 
@@ -45,55 +45,36 @@ class DaySeven(input: List<String>) : BaseDay(input) {
         val jokerCount = hand.count { it == 'J' }
         val newHand = hand.filter { it != 'J' }
         val groups = newHand.groupBy { it }
-        val count = groups.values.map { it.count() }.sorted().reversed().toMutableList()
-        return if (!count.any() && jokerCount == 5) {
+        val counts = groups.values.map { it.count() }.sorted().reversed().toMutableList()
+        return if (!counts.any() && jokerCount == 5) {
             7
         } else {
-            count[0] += jokerCount
-            getStrength(count)
+            counts[0] += jokerCount
+            getStrength(counts)
         }
     }
 
     fun getStrength(cardCounts: List<Int>): Int {
-        return if (cardCounts.count() == 5) {
-            1
-        } else if (cardCounts.count() == 4) {
-            2
-        } else if (cardCounts.count() == 3) {
-            if (cardCounts[0] == 2) {
-                3
-            } else {
-                4
-            }
-        } else if (cardCounts.count() == 2) {
-            if (cardCounts[0] == 3) {
-                5
-            } else {
-                6
-            }
-        } else if (cardCounts.count() == 1) {
-            7
-        } else {
-            -1
+        return when(cardCounts.count()) {
+            5 -> 1
+            4 -> 2
+            3 -> if (cardCounts[0] == 2) 3 else 4
+            2 -> if (cardCounts[0] == 3) 5 else 6
+            1 -> 7
+            else -> -1
         }
     }
 
     fun compareEqualHands(handOne: String, handTwo: String, jokers: Boolean): Int {
-
         val cardStrength = if (jokers) {
             listOf('A', 'K', 'Q', 'T', '9', '8', '7', '6', '5', '4', '3', '2', 'J').reversed()
         } else {
             listOf('A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2').reversed()
         }
 
-        val first = handOne[0]
-        val second = handTwo[0]
-
-        if (handOne.isEmpty()) return 0
-
-        return if (cardStrength.indexOf(first) > cardStrength.indexOf(second)) {
+        return if (cardStrength.indexOf(handOne[0]) > cardStrength.indexOf(handTwo[0])) {
             1
-        } else if (cardStrength.indexOf(first) < cardStrength.indexOf(second)) {
+        } else if (cardStrength.indexOf(handOne[0]) < cardStrength.indexOf(handTwo[0])) {
             -1
         } else {
             if (handOne.length == 1) {
@@ -104,5 +85,3 @@ class DaySeven(input: List<String>) : BaseDay(input) {
         }
     }
 }
-
-// same rank compare recursively
