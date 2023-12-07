@@ -46,8 +46,12 @@ class DaySeven(input: List<String>) : BaseDay(input) {
         val newHand = hand.filter { it != 'J' }
         val groups = newHand.groupBy { it }
         val count = groups.values.map { it.count() }.sorted().reversed().toMutableList()
-        count[0] += jokerCount
-        return getStrength(count)
+        return if (!count.any() && jokerCount == 5) {
+            7
+        } else {
+            count[0] += jokerCount
+            getStrength(count)
+        }
     }
 
     fun getStrength(cardCounts: List<Int>): Int {
