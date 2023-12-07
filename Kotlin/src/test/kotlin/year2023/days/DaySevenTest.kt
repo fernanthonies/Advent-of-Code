@@ -23,7 +23,7 @@ class DaySevenTest {
     @Test
     fun solvePartTwo() {
         val result = subject.solvePartTwo()
-        Assertions.assertEquals("71503", result)
+        Assertions.assertEquals("5905", result)
     }
 
     @Test
