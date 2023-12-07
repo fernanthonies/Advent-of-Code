@@ -1,4 +1,5 @@
 import days.IDay
+import java.awt.datatransfer.Clipboard
 import kotlin.system.measureTimeMillis
 
 abstract class BaseDay(protected val input: List<String>): IDay {

@@ -1,13 +1,16 @@
-import java.io.File
-import year2022.Days.DayTen
+@file:Suppress("KotlinConstantConditions")
 
-fun main(args: Array<String>) {
-    val dayCode = args.last().toInt()
-    val year = args.first().toInt()
-    val input = readFile("./input/${year}/day${dayCode}.txt")
-    val day = when(year) {
-        2022 -> getDayFromYear2022(dayCode, input)
-        2023 -> getDayFromYear2023(dayCode, input)
+import java.io.File
+
+const val YEAR = 2023
+const val DAY = 7
+
+fun main() {
+    val input = readFile("./input/${YEAR}/day${DAY}.txt")
+
+    val day = when(YEAR) {
+        2022 -> getDayFromYear2022(DAY, input)
+        2023 -> getDayFromYear2023(DAY, input)
         else -> throw Error()
     }
     day.solve()
@@ -21,6 +24,7 @@ fun getDayFromYear2023(dayCode: Int, input: List<String>): BaseDay {
         4 -> year2023.Days.DayFour(input)
         5 -> year2023.Days.DayFive(input)
         6 -> year2023.Days.DaySix(input)
+        7 -> year2023.Days.DaySeven(input)
         else -> throw Error()
     }
 }
