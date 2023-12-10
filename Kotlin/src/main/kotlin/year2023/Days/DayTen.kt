@@ -87,21 +87,18 @@ class DayTen(input: List<String>) : BaseDay(input) {
             n = n1Next
         }
 
+        val filteredLoop = loop.filter { listOf('-', 'F', 'L').contains(grid[it]) }
         var count = 0
         for (x in 0 until w) {
             for (y in 0 until h) {
                 if (loop.contains(Point(x, y))) continue
                 var crossings = 0
                 for (test in 0 until y) {
-                    if (loop.filter { listOf('-', 'F', 'L').contains(grid[it]) }.contains(Point(x, test))) {
+                    if (filteredLoop.contains(Point(x, test))) {
                         crossings++
                     }
                 }
-                count += if (crossings % 2 == 0) {
-                    0
-                } else {
-                    1
-                }
+                count += if (crossings % 2 == 0) 0 else 1
             }
         }
 
