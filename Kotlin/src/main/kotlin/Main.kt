@@ -3,7 +3,7 @@
 import java.io.File
 
 const val YEAR = 2023
-const val DAY = 9
+const val DAY = 10
 
 fun main() {
     val input = readFile("./input/${YEAR}/day${DAY}.txt")
@@ -27,6 +27,7 @@ fun getDayFromYear2023(dayCode: Int, input: List<String>): BaseDay {
         7 -> year2023.Days.DaySeven(input)
         8 -> year2023.Days.DayEight(input)
         9 -> year2023.Days.DayNine(input)
+        10 -> year2023.Days.DayTen(input)
         else -> throw Error()
     }
 }
@@ -48,6 +49,5 @@ fun getDayFromYear2022(dayCode: Int, input: List<String>): BaseDay {
 }
 
 fun readFile(fileName: String): List<String> {
-    File(filename).rl
     return File(fileName).useLines { it.toList() }
 }

@@ -25,7 +25,6 @@ class DayNine(input: List<String>) : BaseDay(input) {
         if (!input.any { it != 0 }) {
             return 0
         }
-        input.fold()
         val newArray = Array(input.count() - 1) { 0 }
         for (i in 1 until input.count()) {
             newArray[i - 1] = input[i] - input[i - 1]
