@@ -61,7 +61,51 @@ class DayTen(input: List<String>) : BaseDay(input) {
     }
 
     override fun solvePartTwo(): String {
-        return ""
+        val nextCoords = startCoords.adjacentPoints().filter {
+            when(grid[it.x, it.y]) {
+                '|' -> grid[it.x, it.y - 1] == 'S' || grid[it.x, it.y + 1] == 'S'
+                '-' -> grid[it.x + 1, it.y] == 'S' || grid[it.x - 1, it.y] == 'S'
+                'L' -> grid[it.x, it.y - 1] == 'S' || grid[it.x + 1, it.y] == 'S'
+                'J' -> grid[it.x, it.y - 1] == 'S' || grid[it.x - 1, it.y] == 'S'
+                '7' -> grid[it.x, it.y + 1] == 'S' || grid[it.x - 1, it.y] == 'S'
+                'F' -> grid[it.x, it.y + 1] == 'S' || grid[it.x + 1, it.y] == 'S'
+                '.' -> false
+                'S' -> false
+                else -> false
+            }
+        }
+
+        val printGrid = Grid(w + 2, h + 2) { " ." }
+        val loop = mutableListOf<Point>()
+        var (n) = nextCoords
+        var nLast = startCoords
+        while (n != startCoords) {
+            printGrid[n] = " ${grid[n]}"
+            loop.add(n)
+            val n1Next = pointChanges(grid[n]).map { it + n }.first { it != nLast }
+            nLast = n
+            n = n1Next
+        }
+
+        var count = 0
+        for (x in 0 until w) {
+            for (y in 0 until h) {
+                if (loop.contains(Point(x, y))) continue
+                var crossings = 0
+                for (test in 0 until y) {
+                    if (loop.filter { listOf('-', 'F', 'L').contains(grid[it]) }.contains(Point(x, test))) {
+                        crossings++
+                    }
+                }
+                count += if (crossings % 2 == 0) {
+                    0
+                } else {
+                    1
+                }
+            }
+        }
+
+        return count.toString()
     }
 
     fun pointChanges(pipe: Char): List<Point> {

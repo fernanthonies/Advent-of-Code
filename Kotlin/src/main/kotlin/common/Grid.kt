@@ -24,4 +24,13 @@ class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
     operator fun set(x: Int, y: Int, value: T) {
         grid[x][y] = value
     }
+
+    fun print() {
+        for (y in 0 until grid.size) {
+            for (x in 0 until grid[y].size) {
+                print(grid[x][y])
+            }
+            println()
+        }
+    }
 }
