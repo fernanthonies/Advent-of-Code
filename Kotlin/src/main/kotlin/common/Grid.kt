@@ -1,7 +1,7 @@
 package common
 
-class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
-    private val grid: MutableList<MutableList<T>>
+open class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
+    protected val grid: MutableList<MutableList<T>>
 
     init {
         grid = MutableList(width) {
@@ -34,3 +34,5 @@ class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
         }
     }
 }
+
+class PaddedGrid<T>(width: Int, height: Int, init: (Int) -> T): Grid<T>(width + 2, height + 2, init)

@@ -2,6 +2,7 @@ package year2023.Days
 
 import BaseDay
 import common.Grid
+import common.PaddedGrid
 import common.Point
 
 class DayTen(input: List<String>) : BaseDay(input) {
@@ -10,17 +11,17 @@ class DayTen(input: List<String>) : BaseDay(input) {
     val h: Int
     private lateinit var startCoords: Point
 
-    private val grid: Grid<Char>
+    private val grid: PaddedGrid<Char>
 
     init {
         w = input[0].length
         h = input.count()
 
-        grid = Grid(w + 2, h + 2) { '.' }
+        grid = PaddedGrid(w, h) { '.' }
 
         for ((y, line) in input.withIndex()) {
             for ((x, value) in line.withIndex()) {
-                grid[x+1, y+1] = value
+                grid[x + 1, y + 1] = value
                 if (value == 'S') startCoords = Point(x+1, y+1)
             }
         }
