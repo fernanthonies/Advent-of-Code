@@ -4,6 +4,7 @@ import BaseDay
 import common.Grid
 import common.PaddedGrid
 import common.Point
+import common.manhattanDistance
 import kotlin.math.abs
 
 class DayEleven(input: List<String>) : BaseDay(input) {
@@ -26,26 +27,34 @@ class DayEleven(input: List<String>) : BaseDay(input) {
     }
 
     override fun solvePartOne(): String {
-        var sum = 0
-        for (galaxy in galaxies) {
-            for (otherGalaxy in galaxies) {
-                if (galaxy == otherGalaxy) {
-                    continue
-                }
-
-                //check if any expanded rows/cols in range, and incrememnt length
-                val xRange = (galaxy.x until otherGalaxy.x).toList().intersect(expandedCols).count()
-                val yRange = (galaxy.y until otherGalaxy.y).toList().intersect(expandedRows).count()
-
-                val distance = abs(galaxy.x - otherGalaxy.x) + abs(galaxy.y - otherGalaxy.y) + xRange + yRange
-                sum += distance
-            }
-        }
-
-        return sum.toString()
+        return solve(1).toString()
     }
 
     override fun solvePartTwo(): String {
-        return ""
+        return solve(999999).toString()
+    }
+
+    private fun solve(expansion: Int): Long {
+        var sum: Long = 0
+
+        val pairs = mutableListOf<Pair<Point, Point>>()
+        for (i in 0 until galaxies.count()) {
+            for (j in i + 1 until galaxies.count()) {
+                pairs.add(Pair(galaxies[i], galaxies[j]))
+            }
+        }
+
+        for (pair in pairs) {
+            val (g1, g2) = pair
+            val xRange = if (g1.x < g2.x) (g1.x until g2.x) else (g2.x until g1.x)
+            val colExpansion = xRange.toList().intersect(expandedCols.toSet()).count() * expansion
+            val yRange = if (g1.y < g2.y) (g1.y until g2.y) else (g2.y until g1.y)
+            val rowExpansion = yRange.toList().intersect(expandedRows.toSet()).count() * expansion
+
+            val distance = manhattanDistance(g1, g2) + colExpansion + rowExpansion
+            sum += distance
+        }
+
+        return sum
     }
 }
