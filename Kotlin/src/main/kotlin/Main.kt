@@ -29,6 +29,7 @@ fun getDayFromYear2023(dayCode: Int, input: List<String>): BaseDay {
         9 -> year2023.Days.DayNine(input)
         10 -> year2023.Days.DayTen(input)
         11 -> year2023.Days.DayEleven(input)
+        12 -> year2023.Days.DayTwelve(input)
         else -> throw Error()
     }
 }
