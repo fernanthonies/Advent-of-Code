@@ -1,10 +1,8 @@
 package year2023.Days
 
 import BaseDay
-import java.util.*
-import kotlin.collections.ArrayDeque
 
-class DayFive(input: List<String>) : BaseDay(input) {
+class DayFive : BaseDay() {
     override fun solvePartOne(): String {
         val seeds = input[0].split(" ").drop(1).map { it.toLong() }
         val steps: MutableList<MutableList<Mapping>> = generateSteps(input)

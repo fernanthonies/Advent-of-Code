@@ -1,9 +1,8 @@
 package year2023.Days
 
 import BaseDay
-import common.indicesOf
 
-class DayTwelve(input: List<String>) : BaseDay(input) {
+class DayTwelve : BaseDay() {
     override fun solvePartOne(): String {
         var solutionCount = 0
         for (line in input) {
@@ -78,11 +77,6 @@ class DayTwelve(input: List<String>) : BaseDay(input) {
             }
         }
         return solutionCount.toString()
-    }
-
-    fun solve(): Int {
-        
-        return 0
     }
 
     override fun solvePartTwo(): String {

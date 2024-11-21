@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DayNine(input: List<String>) : BaseDay(input) {
+class DayNine : BaseDay() {
 
     override fun solvePartOne(): String {
         val head = Point(0, 0)

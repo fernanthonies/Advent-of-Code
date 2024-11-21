@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DayOne(input: List<String>) : BaseDay(input) {
+class DayOne : BaseDay() {
 
     private val solvedList: List<Int>
 

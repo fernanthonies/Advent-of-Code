@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import year2023.Days.DayFive
-import year2023.Days.DayFour
-import year2023.Days.DayThree
 import year2023.Days.Mapping
 
 class DayFiveTest {

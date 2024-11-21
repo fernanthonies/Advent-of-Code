@@ -1,9 +1,8 @@
 package year2023.Days
 
 import BaseDay
-import common.lcmOfArray
 
-class DayNine(input: List<String>) : BaseDay(input) {
+class DayNine : BaseDay() {
 
     override fun solvePartOne(): String {
         var sum = 0

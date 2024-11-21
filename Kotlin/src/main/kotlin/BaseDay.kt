@@ -1,8 +1,10 @@
+
 import days.IDay
-import java.awt.datatransfer.Clipboard
 import kotlin.system.measureTimeMillis
 
-abstract class BaseDay(protected val input: List<String>): IDay {
+abstract class BaseDay(): IDay {
+    protected var input: List<String> = listOf()
+
     override fun solve() {
         var solutionOne = ""
         var solutionTwo = ""
@@ -17,6 +19,9 @@ abstract class BaseDay(protected val input: List<String>): IDay {
         println("Part two solution=${solutionTwo}, in $execTimetwo milliseconds")
     }
 
+    override fun setData(data: List<String>) {
+        input = data
+    }
     abstract override fun solvePartOne(): String
     abstract override fun solvePartTwo(): String
 }

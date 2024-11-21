@@ -3,7 +3,7 @@ package year2022.Days
 import BaseDay
 import java.util.*
 
-class DayFive(input: List<String>) : BaseDay(input) {
+class DayFive : BaseDay() {
     override fun solvePartOne(): String {
         return runInstructionList { instruction, stackList -> perform9000Move(instruction, stackList) }
     }

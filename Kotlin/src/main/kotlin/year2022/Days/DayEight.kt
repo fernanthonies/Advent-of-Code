@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DayEight(input: List<String>) : BaseDay(input) {
+class DayEight(input: List<String>) : BaseDay() {
     private val treeArray: IntArray
     private val col: Int
     private val row: Int

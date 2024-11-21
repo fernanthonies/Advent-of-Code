@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DaySeven(input: List<String>) : BaseDay(input) {
+class DaySeven : BaseDay() {
 
     private var rootNode = ENode(null, "root", ENode.NodeType.Directory)
 

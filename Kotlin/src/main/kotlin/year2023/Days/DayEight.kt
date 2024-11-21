@@ -3,7 +3,7 @@ package year2023.Days
 import BaseDay
 import common.lcmOfArray
 
-class DayEight(input: List<String>) : BaseDay(input) {
+class DayEight : BaseDay() {
 
     override fun solvePartOne(): String {
         val instructions = input[0].toCharArray()

@@ -1,13 +1,10 @@
 package year2023.Days
 
 import BaseDay
-import common.Grid
-import common.PaddedGrid
 import common.Point
 import common.manhattanDistance
-import kotlin.math.abs
 
-class DayEleven(input: List<String>) : BaseDay(input) {
+class DayEleven : BaseDay() {
 
     val galaxies: MutableList<Point> = mutableListOf()
     var expandedRows: List<Int> = listOf()

@@ -2,7 +2,7 @@ package year2023.Days
 
 import BaseDay
 
-class DayTwo(input: List<String>) : BaseDay(input) {
+class Day2() : BaseDay() {
     private val redMax: Int = 12
     private val greenMax: Int = 13
     private val blueMax: Int = 14

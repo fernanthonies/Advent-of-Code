@@ -5,7 +5,7 @@ import common.Grid
 import common.PaddedGrid
 import common.Point
 
-class DayTen(input: List<String>) : BaseDay(input) {
+class DayTen : BaseDay() {
 
     val w: Int
     val h: Int

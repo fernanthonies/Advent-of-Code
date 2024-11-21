@@ -2,7 +2,7 @@ package year2023.Days
 
 import BaseDay
 
-class DayOne(input: List<String>) : BaseDay(input) {
+class Day1 : BaseDay() {
     override fun solvePartOne(): String {
         return input.solve().toString()
     }

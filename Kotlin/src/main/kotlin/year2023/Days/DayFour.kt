@@ -3,7 +3,7 @@ package year2023.Days
 import BaseDay
 import kotlin.math.pow
 
-class DayFour(input: List<String>) : BaseDay(input) {
+class DayFour : BaseDay() {
     override fun solvePartOne(): String {
         var sum = 0
         input.forEach {

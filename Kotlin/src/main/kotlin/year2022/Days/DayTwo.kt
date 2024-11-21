@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DayTwo(input: List<String>) : BaseDay(input) {
+class DayTwo : BaseDay() {
     override fun solvePartOne(): String {
         var score = 0
 

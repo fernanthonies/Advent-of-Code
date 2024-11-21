@@ -2,22 +2,22 @@ package year2023.days
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
-import year2023.Days.DayOne
+import year2023.Days.Day1
 
-class DayOneTest {
+class Day1Test {
 
-    private lateinit var subject: DayOne
+    private lateinit var subject: Day1
 
     @Test
     fun solvePartOne() {
-        subject = DayOne(inputStringOne.split("\n"))
+        subject = Day1(inputStringOne.split("\n"))
         val result = subject.solvePartOne()
         assertEquals("142", result)
     }
 
     @Test
     fun solvePartTwo() {
-        subject = DayOne(inputStringTwo.split("\n"))
+        subject = Day1(inputStringTwo.split("\n"))
         val result = subject.solvePartTwo()
         assertEquals("281", result)
     }

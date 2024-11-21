@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import year2023.Days.DayFour
-import year2023.Days.DayThree
 
 class DayFourTest {
     private lateinit var subject: DayFour

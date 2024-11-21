@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DayTen(input: List<String>) : BaseDay(input) {
+class DayTen : BaseDay() {
 
     private val pixelArray = mutableListOf<Int>()
 

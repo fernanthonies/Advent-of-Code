@@ -2,7 +2,7 @@ package year2023.Days
 
 import BaseDay
 
-class DaySix(input: List<String>) : BaseDay(input) {
+class DaySix : BaseDay() {
     override fun solvePartOne(): String {
         val times = input[0].split("[\\s,]+".toRegex()).drop(1).map { it.toLong() }
         val distances = input[1].split("[\\s,]+".toRegex()).drop(1).map { it.toLong() }

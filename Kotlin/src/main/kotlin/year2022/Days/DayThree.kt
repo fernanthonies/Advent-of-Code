@@ -2,7 +2,7 @@ package year2022.Days
 
 import BaseDay
 
-class DayThree(input: List<String>) : BaseDay(input) {
+class DayThree : BaseDay() {
     override fun solvePartOne(): String {
         var total = 0
         input.map { splitString(it) }.forEach { linePair ->
