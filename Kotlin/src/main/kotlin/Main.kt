@@ -4,7 +4,7 @@ import common.GetData
 import kotlin.reflect.*
 
 const val YEAR = 2021
-const val DAY = 1
+const val DAY = 2
 
 fun main() {
     val c = Class.forName("year${YEAR}.Days.Day${DAY}")

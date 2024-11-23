@@ -1,6 +1,6 @@
 package common
 
-class Point(val x: Int, val y: Int): Any() {
+class Point(var x: Int, var y: Int): Any() {
     fun adjacentPoints(allowDiagonal: Boolean = false): Set<Point> {
         val result = mutableSetOf<Point>()
         result.add(Point(x, y - 1))
