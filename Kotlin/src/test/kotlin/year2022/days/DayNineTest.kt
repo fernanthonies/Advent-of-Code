@@ -1,8 +1,7 @@
 package year2022.days
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
 import year2022.Days.DayNine
 
 class DayNineTest {
@@ -11,13 +10,13 @@ class DayNineTest {
 
     @Test
     fun solvePartOne() {
-        subject = DayNine(inputString.split("\n"))
+        subject = DayNine()
         assertEquals("13", subject.solvePartOne())
     }
 
     @Test
     fun solvePartTwo() {
-        subject = DayNine(inputTwo.split("\n"))
+        subject = DayNine()
         assertEquals("36", subject.solvePartTwo())
     }
 

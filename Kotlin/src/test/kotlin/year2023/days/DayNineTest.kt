@@ -9,14 +9,14 @@ class DayNineTest {
 
     @Test
     fun solvePartOne() {
-        subject = DayNine(inputString.split("\n"))
+        subject = DayNine()
         val result = subject.solvePartOne()
         Assertions.assertEquals("114", result)
     }
 
     @Test
     fun solvePartTwo() {
-        subject = DayNine(inputString.split("\n"))
+        subject = DayNine()
         val result = subject.solvePartTwo()
         Assertions.assertEquals("2", result)
     }

@@ -1,27 +1,22 @@
 package year2023.days
 
-import common.lcm
-import common.lcmOfArray
 import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import year2023.Days.DayEight
-import year2023.Days.DaySeven
-import year2023.Days.DaySix
 
 class DayEightTest {
     private lateinit var subject: DayEight
 
     @Test
     fun solvePartOne() {
-        subject = DayEight(inputStringOne.split("\n"))
+        subject = DayEight()
         val result = subject.solvePartOne()
         Assertions.assertEquals("6", result)
     }
 
     @Test
     fun solvePartTwo() {
-        subject = DayEight(inputStringTwo.split("\n"))
+        subject = DayEight()
         val result = subject.solvePartTwo()
         Assertions.assertEquals("6", result)
     }

@@ -4,10 +4,10 @@ import BaseDay
 
 class Day1 : BaseDay() {
     override fun solvePartOne(): String {
-        TODO("Not yet implemented")
+        return ""
     }
 
     override fun solvePartTwo(): String {
-        TODO("Not yet implemented")
+        return ""
     }
 }

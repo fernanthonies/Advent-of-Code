@@ -11,7 +11,7 @@ class DayFiveTest {
 
     @BeforeEach
     fun setUp() {
-        subject = DayFive(inputString.split("\n"))
+        subject = DayFive()
     }
 
     @Test

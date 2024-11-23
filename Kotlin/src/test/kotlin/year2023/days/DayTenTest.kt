@@ -2,7 +2,6 @@ package year2023.days
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
-import year2023.Days.DayNine
 import year2023.Days.DayTen
 
 class DayTenTest {
@@ -10,14 +9,14 @@ class DayTenTest {
 
     @Test
     fun solvePartOne() {
-        subject = DayTen(inputString.split("\n"))
+        subject = DayTen()
         val result = subject.solvePartOne()
         Assertions.assertEquals("8", result)
     }
 
     @Test
     fun solvePartTwo() {
-        subject = DayTen(inputStringTwo.split("\n"))
+        subject = DayTen()
         val result = subject.solvePartTwo()
         Assertions.assertEquals("10", result)
     }

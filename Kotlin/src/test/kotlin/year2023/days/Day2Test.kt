@@ -10,7 +10,7 @@ class Day2Test {
 
     @BeforeEach
     fun setUp() {
-        subject = year2023.Days.Day2(inputString.split("\n"))
+        subject = year2023.Days.Day2()
     }
 
     @Test

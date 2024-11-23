@@ -1,9 +1,8 @@
 package year2022.days
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
 import year2022.Days.DaySix
 
 class DaySixTest {
@@ -12,7 +11,7 @@ class DaySixTest {
 
     @BeforeEach
     fun setUp() {
-        subject = DaySix(listOf())
+        subject = DaySix()
     }
 
     @Test

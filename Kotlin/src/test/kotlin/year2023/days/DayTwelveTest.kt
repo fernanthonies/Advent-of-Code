@@ -8,14 +8,16 @@ class DayTwelveTest {
     private lateinit var subject: DayTwelve
     @Test
     fun solvePartOne() {
-        subject = DayTwelve(inputString.split("\n"))
+        subject = DayTwelve()
+        subject.setData(inputString.split("\n"))
         val result = subject.solvePartOne()
         Assertions.assertEquals("21", result)
     }
 
     @Test
     fun solvePartTwo() {
-        subject = DayTwelve(inputString.split("\n"))
+        subject = DayTwelve()
+        subject.setData(inputString.split("\n"))
         val result = subject.solvePartTwo()
         Assertions.assertEquals("8410", result)
     }

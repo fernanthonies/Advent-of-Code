@@ -4,14 +4,13 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import year2023.Days.DaySeven
-import year2023.Days.DaySix
 
 class DaySevenTest {
     private lateinit var subject: DaySeven
 
     @BeforeEach
     fun setUp() {
-        subject = DaySeven(inputString.split("\n"))
+        subject = DaySeven()
     }
 
     @Test
