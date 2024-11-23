@@ -3,7 +3,7 @@
 import common.GetData
 import kotlin.reflect.*
 
-const val YEAR = 2024
+const val YEAR = 2021
 const val DAY = 1
 
 fun main() {
