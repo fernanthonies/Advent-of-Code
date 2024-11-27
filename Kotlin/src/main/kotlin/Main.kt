@@ -3,8 +3,8 @@
 import common.GetData
 import kotlin.reflect.*
 
-const val YEAR = 2021
-const val DAY = 2
+const val YEAR = 2023
+const val DAY = 13
 
 fun main() {
     val c = Class.forName("year${YEAR}.Days.Day${DAY}")

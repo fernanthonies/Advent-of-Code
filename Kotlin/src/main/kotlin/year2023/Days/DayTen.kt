@@ -17,7 +17,7 @@ class DayTen : BaseDay() {
         w = input[0].length
         h = input.count()
 
-        grid = PaddedGrid(w, h) { '.' }
+        grid = PaddedGrid(w, h) { _, _ -> '.' }
 
         for ((y, line) in input.withIndex()) {
             for ((x, value) in line.withIndex()) {
@@ -76,7 +76,7 @@ class DayTen : BaseDay() {
             }
         }
 
-        val printGrid = Grid(w + 2, h + 2) { " ." }
+        val printGrid = Grid(w + 2, h + 2) {  _, _ -> " ." }
         val loop = mutableListOf<Point>()
         var (n) = nextCoords
         var nLast = startCoords

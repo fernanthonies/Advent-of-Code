@@ -1,13 +1,15 @@
 package common
 
-open class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
+open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any() {
     protected val grid: MutableList<MutableList<T>>
 
     init {
-        grid = MutableList(width) {
-            MutableList(height, init)
+        grid = MutableList(height) { y ->
+            MutableList(width) { x -> init(x, y) }
         }
     }
+
+    constructor(source: Grid<T>) : this(source.width, source.height, { x, y -> source[y, x]})
 
     operator fun get(point: Point): T {
         return get(point.x, point.y)
@@ -25,6 +27,31 @@ open class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
         grid[x][y] = value
     }
 
+    fun rows(): List<List<T>> {
+        return grid
+    }
+
+    fun columns(): List<List<T>> {
+        return transpose().rows()
+    }
+
+    override fun toString(): String {
+        var s: String = ""
+        for (y in grid) {
+            for (x in y) {
+                s += x
+            }
+            s += "\n"
+        }
+        return s
+    }
+
+    fun transpose(): Grid<T> {
+        return Grid(height, width) { x, y ->
+            grid[x][y]
+        }
+    }
+
     fun print() {
         for (y in 0 until grid.size) {
             for (x in 0 until grid[y].size) {
@@ -33,6 +60,14 @@ open class Grid<T>(width: Int, height: Int, init: (Int) -> T): Any() {
             println()
         }
     }
+
+    companion object {
+        fun fromStringInput(input: List<String>): Grid<String> {
+            return Grid(input[0].length, input.size) {x, y ->
+                input[y][x].toString()
+            }
+        }
+    }
 }
 
-class PaddedGrid<T>(width: Int, height: Int, init: (Int) -> T): Grid<T>(width + 2, height + 2, init)
+class PaddedGrid<T>(width: Int, height: Int, init: (Int, Int) -> T): Grid<T>(width + 2, height + 2, init)
