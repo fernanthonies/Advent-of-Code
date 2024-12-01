@@ -1,16 +1,8 @@
 # Advent of Code
-## 2023 Solutions
-[Day One](src/main/kotlin/year2023/days/DayOne.kt)  
-[Day Two](src/main/kotlin/year2023/days/DayTwo.kt)  
-[Day Three](src/main/kotlin/year2023/days/DayThree.kt)
-## 2022 Solutions
-[Day One](src/main/kotlin/year2022/days/DayOne.kt)  
-[Day Two](src/main/kotlin/year2022/days/DayTwo.kt)  
-[Day Three](src/main/kotlin/year2022/days/DayThree.kt)  
-[Day Four](src/main/kotlin/year2022/days/DayFour.kt)  
-[Day Five](src/main/kotlin/year2022/days/DayFive.kt)  
-[Day Six](src/main/kotlin/year2022/days/DaySix.kt)  
-[Day Seven](src/main/kotlin/year2022/days/DaySeven.kt)  
-[Day Eight](src/main/kotlin/year2022/days/DayEight.kt)  
-[Day Nine](src/main/kotlin/year2022/days/DayNine.kt)  
-[Day Ten](src/main/kotlin/year2022/days/DayTen.kt)
+## Kotlin
+[2024 Solutions](https://github.com/fernanthonies/Advent-of-Code/tree/main/Kotlin/Kotlin/src/main/kotlin/year2024/Days)  
+[2023 Solutions](https://github.com/fernanthonies/Advent-of-Code/tree/main/Kotlin/Kotlin/src/main/kotlin/year2023/Days)  
+[2022 Solutions](https://github.com/fernanthonies/Advent-of-Code/tree/main/Kotlin/Kotlin/src/main/kotlin/year2022/Days)  
+
+## Python
+[2024 Solutions](https://github.com/fernanthonies/Advent-of-Code/tree/main/Python/2024)
