@@ -15,3 +15,7 @@ fun <T, R> List<T>.zipWithN(n: Int, transform: (List<T>) -> R): List<R> {
         }
     }.toList()
 }
+
+fun <T> List<T>.dropIndex(i: Int): List<T> {
+    return listOf(this.subList(0, i), this.subList(i+1, this.size)).flatten()
+}

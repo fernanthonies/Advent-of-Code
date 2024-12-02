@@ -5,82 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3702d67f-fc9c-4f07-bf55-80b80db791c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_engine.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BaseDay.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Collections.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/GetData.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Grid.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Math.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Parsing.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Point.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Point3.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/String.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/bits.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2021/Days/Day1.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2021/Days/Day2.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2021/Days/Day3.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayEight.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayFive.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayFour.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayNine.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayOne.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DaySeven.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DaySix.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayTen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayThree.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/DayTwo.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2022/Days/IDay.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/Day1.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/Day13.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/Day2.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/Day3.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayEight.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayEleven.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayFive.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayFour.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayNine.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DaySeven.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DaySix.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayTen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2023/Days/DayTwelve.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/year2024/Days/Day1.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/BaseTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2021/Days/Day1Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2021/Days/Day2Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2021/Days/Day3Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/Day1Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/Day2Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/DayEightTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/DayFiveTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/DayNineTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/DaySevenTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/DaySixTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2022/days/DayTenTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/Day13Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/Day1Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/Day2Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/Day3Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayEightTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayElevenTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayFiveTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayFourTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayNineTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DaySevenTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DaySixTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayTenTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2023/days/DayTwelveTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/year2024/days/Day1Test.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Collections.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Collections.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/dev/Advent-of-Code/Kotlin",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3862069",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/Advent-of-Code/Kotlin&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3862069&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\Advent-of-Code\input\2023" />
@@ -146,54 +73,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="Day13Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2023.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2023.days" />
-      <option name="MAIN_CLASS_NAME" value="year2023.days.Day13Test" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day13Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2023.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2023.days" />
-      <option name="MAIN_CLASS_NAME" value="year2023.days.Day13Test" />
-      <option name="METHOD_NAME" value="solvePartTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day1Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2024.days" />
-      <option name="MAIN_CLASS_NAME" value="year2024.days.Day1Test" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day1Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC" />
       <extension name="coverage">
@@ -210,6 +89,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day2Test" />
+      <option name="METHOD_NAME" value="solvePartOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day2Test" />
+      <option name="METHOD_NAME" value="solvePartTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AoC" />
@@ -219,19 +145,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Day1Test.solvePartOne" />
+      <item itemvalue="JUnit.Day2Test" />
+      <item itemvalue="JUnit.Day2Test.solvePartOne" />
+      <item itemvalue="JUnit.Day2Test.solvePartTwo" />
       <item itemvalue="JUnit.Day1Test.solvePartTwo" />
-      <item itemvalue="JUnit.Day13Test.solvePartTwo" />
-      <item itemvalue="JUnit.Day13Test.solvePartOne" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.Day2Test.solvePartTwo" />
+        <item itemvalue="JUnit.Day2Test.solvePartOne" />
+        <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day1Test.solvePartTwo" />
-        <item itemvalue="JUnit.Day1Test.solvePartOne" />
-        <item itemvalue="JUnit.Day13Test.solvePartTwo" />
-        <item itemvalue="JUnit.Day13Test.solvePartOne" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +190,12 @@
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="gridRowsStrings[j]" />
+      </configuration>
+      <configuration name="JUnit">
+        <watch expression="line.dropIndex(i).map { s -&gt; s.toInt() }" />
+        <watch expression="intLine.subList(0 ,i)" />
+        <watch expression="intLine.subList(i + 1, intLine.count() - 1)" />
+        <watch expression="intLine.subList(0 ,i) + intLine.subList(i + 1, intLine.count()-1)" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
