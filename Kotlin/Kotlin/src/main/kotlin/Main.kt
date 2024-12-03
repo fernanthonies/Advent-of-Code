@@ -1,10 +1,9 @@
 @file:Suppress("KotlinConstantConditions")
 
 import common.GetData
-import kotlin.reflect.*
 
 const val YEAR = 2024
-const val DAY = 2
+const val DAY = 3
 
 fun main() {
     val c = Class.forName("year${YEAR}.Days.Day${DAY}")

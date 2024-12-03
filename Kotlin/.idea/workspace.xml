@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3702d67f-fc9c-4f07-bf55-80b80db791c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Python/2024/Day3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2Z5EzWhYdKphanEy4edRDThfqxP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -53,7 +53,8 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/Advent-of-Code/Kotlin&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/anthony/Documents/dev/Advent-of-Code/Kotlin&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3862069&quot;,
@@ -66,28 +67,14 @@
       <recent name="C:\dev\Advent-of-Code\Kotlin\src\main\kotlin\year2023\Days" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="year2024.days" />
+      <recent name="year2024.Days" />
       <recent name="year2023.days" />
       <recent name="year2023.Days" />
       <recent name="year2022.Days" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="Day1Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2024.days" />
-      <option name="MAIN_CLASS_NAME" value="year2024.days.Day1Test" />
-      <option name="METHOD_NAME" value="solvePartTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC" />
       <extension name="coverage">
@@ -99,22 +86,6 @@
       <option name="PACKAGE_NAME" value="year2024.days" />
       <option name="MAIN_CLASS_NAME" value="year2024.days.Day2Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day2Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2024.days" />
-      <option name="MAIN_CLASS_NAME" value="year2024.days.Day2Test" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,6 +106,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day3Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day3Test" />
+      <option name="METHOD_NAME" value="solvePartOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day3Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day3Test" />
+      <option name="METHOD_NAME" value="solvePartTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AoC" />
@@ -144,19 +147,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Day3Test.solvePartOne" />
+      <item itemvalue="JUnit.Day3Test.solvePartTwo" />
       <item itemvalue="JUnit.Day2Test" />
-      <item itemvalue="JUnit.Day2Test.solvePartOne" />
       <item itemvalue="JUnit.Day2Test.solvePartTwo" />
-      <item itemvalue="JUnit.Day1Test.solvePartTwo" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.Day3Test.solvePartTwo" />
+        <item itemvalue="JUnit.Day3Test.solvePartOne" />
         <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day2Test.solvePartTwo" />
-        <item itemvalue="JUnit.Day2Test.solvePartOne" />
-        <item itemvalue="JUnit.Day1Test.solvePartTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +187,14 @@
           <line>41</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day2.kt</url>
+          <line>7</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -195,6 +206,8 @@
         <watch expression="intLine.subList(0 ,i)" />
         <watch expression="intLine.subList(i + 1, intLine.count() - 1)" />
         <watch expression="intLine.subList(0 ,i) + intLine.subList(i + 1, intLine.count()-1)" language="kotlin" />
+        <watch expression="(donts.lastOrNull { it &lt; match.range.first } ?: 0)" />
+        <watch expression="(dos.lastOrNull { it &lt; match.range.first } ?: 0)" />
       </configuration>
     </watches-manager>
   </component>
