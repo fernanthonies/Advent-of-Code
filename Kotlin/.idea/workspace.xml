@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3702d67f-fc9c-4f07-bf55-80b80db791c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Collections.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Collections.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,9 +153,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day2Test.solvePartTwo" />
         <item itemvalue="JUnit.Day2Test.solvePartOne" />
-        <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day1Test.solvePartTwo" />
       </list>
     </recent_temporary>
