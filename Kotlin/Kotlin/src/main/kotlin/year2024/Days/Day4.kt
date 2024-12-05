@@ -4,14 +4,15 @@ import BaseDay
 import common.Grid
 import common.Point
 
+@OptIn(ExperimentalStdlibApi::class)
 class Day4: BaseDay() {
     private lateinit var grid: Grid<String>
     override fun solvePartOne(): String {
         grid = Grid.fromStringInput(input)
 
         var sum = 0
-        for (y in 0..grid.height-1) {
-            for (x in 0..grid.width-1) {
+        for (y in 0..<grid.height) {
+            for (x in 0..<grid.width) {
                 if (grid[x, y] == "X") {
                     val nearby = Point(x, y).adjacentPoints(true).filter { it.x >= 0 && it.y >= 0 && it.x < grid.width && it.y < grid.height }
                     sum += nearby.filter { grid[it] == "M" }.count { isInLineXMAS(it, it - Point(x, y)) }

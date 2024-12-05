@@ -7,8 +7,8 @@
     <list default="true" id="3702d67f-fc9c-4f07-bf55-80b80db791c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Grid.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Grid.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Point.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Collections.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/common/Collections.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin/src/main/kotlin/year2024/Days/Day4.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,39 +72,7 @@
       <recent name="year2022.Days" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day4Test.solvePartOne">
-    <configuration name="Day3Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2024.days" />
-      <option name="MAIN_CLASS_NAME" value="year2024.days.Day3Test" />
-      <option name="METHOD_NAME" value="solvePartOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day3Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.days.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="year2024.days" />
-      <option name="MAIN_CLASS_NAME" value="year2024.days.Day3Test" />
-      <option name="METHOD_NAME" value="solvePartTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="Day4Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC" />
       <extension name="coverage">
@@ -137,6 +105,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5Test.solvePartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day5Test" />
+      <option name="METHOD_NAME" value="solvePartOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day5Test.solvePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.days.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="year2024.days" />
+      <option name="MAIN_CLASS_NAME" value="year2024.days.Day5Test" />
+      <option name="METHOD_NAME" value="solvePartTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AoC" />
@@ -146,19 +146,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Day5Test.solvePartTwo" />
+      <item itemvalue="JUnit.Day5Test.solvePartOne" />
       <item itemvalue="JUnit.Day4Test.solvePartOne" />
       <item itemvalue="JUnit.Day4Test.solvePartTwo" />
-      <item itemvalue="JUnit.Day3Test.solvePartOne" />
-      <item itemvalue="JUnit.Day3Test.solvePartTwo" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day4Test.solvePartOne" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.Day5Test.solvePartTwo" />
+        <item itemvalue="JUnit.Day5Test.solvePartOne" />
+        <item itemvalue="JUnit.Day4Test.solvePartOne" />
         <item itemvalue="JUnit.Day4Test.solvePartTwo" />
-        <item itemvalue="JUnit.Day3Test.solvePartOne" />
-        <item itemvalue="JUnit.Day3Test.solvePartTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -199,14 +199,15 @@
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="gridRowsStrings[j]" />
+        <watch expression="pre" />
+        <watch expression="pre" />
       </configuration>
       <configuration name="JUnit">
-        <watch expression="grid[it]" />
-        <watch expression="grid[it] == &quot;M&quot;" />
-        <watch expression="isInLineSAM(it, it - Point(x, y))" />
-        <watch expression="grid[p]" />
-        <watch expression="grid[p].nextSAM()" />
-        <watch expression="grid[p + direction]" />
+        <watch expression="post[p]" />
+        <watch expression="pre[p]" />
+        <watch expression="post[p]?.firstOrNull { newList.contains(it) }" />
+        <watch expression="pre[p]?.lastOrNull { newList.contains(it) }" />
+        <watch expression="newList.indexOf(it)" />
       </configuration>
     </watches-manager>
   </component>
