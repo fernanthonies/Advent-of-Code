@@ -20,11 +20,11 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
     }
 
     operator fun get(x: Int, y: Int): T {
-        return grid[x][y]
+        return grid[y][x]
     }
 
     operator fun set(x: Int, y: Int, value: T) {
-        grid[x][y] = value
+        grid[y][x] = value
     }
 
     fun rows(): List<List<T>> {
@@ -33,6 +33,22 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
 
     fun columns(): List<List<T>> {
         return transpose().rows()
+    }
+
+    fun forEach(func: (T) -> Unit) {
+        grid.forEach { col ->
+            col.forEach { p ->
+                func(p)
+            }
+        }
+    }
+
+    fun forEachIndexed(func: (T, x: Int, y: Int) -> Unit) {
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                func(p, x, y)
+            }
+        }
     }
 
     override fun toString(): String {

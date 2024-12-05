@@ -1,12 +1,14 @@
 package common
 
 class Point(var x: Int, var y: Int): Any() {
-    fun adjacentPoints(allowDiagonal: Boolean = false): Set<Point> {
+    fun adjacentPoints(allowDiagonal: Boolean = false, allowCross: Boolean = true): Set<Point> {
         val result = mutableSetOf<Point>()
-        result.add(Point(x, y - 1))
-        result.add(Point(x, y + 1))
-        result.add(Point(x - 1, y))
-        result.add(Point(x + 1, y))
+        if (allowCross) {
+            result.add(Point(x, y - 1))
+            result.add(Point(x, y + 1))
+            result.add(Point(x - 1, y))
+            result.add(Point(x + 1, y))
+        }
         if (allowDiagonal) {
             result.add(Point(x - 1, y - 1))
             result.add(Point(x + 1, y + 1))
@@ -18,6 +20,10 @@ class Point(var x: Int, var y: Int): Any() {
 
     operator fun plus(other: Point): Point {
         return Point(this.x + other.x, this.y + other.y)
+    }
+
+    operator fun minus(other: Point): Point {
+        return Point(this.x - other.x, this.y - other.y)
     }
 
     override fun equals(other: Any?): Boolean {
