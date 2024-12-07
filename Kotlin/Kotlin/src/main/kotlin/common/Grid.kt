@@ -43,6 +43,14 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
         }
     }
 
+    fun forEachIndexed(func: (T, p: Point) -> Unit) {
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                func(p, Point(x, y))
+            }
+        }
+    }
+
     fun forEachIndexed(func: (T, x: Int, y: Int) -> Unit) {
         grid.forEachIndexed { y, col ->
             col.forEachIndexed { x, p ->
@@ -71,7 +79,7 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
     fun print() {
         for (y in 0 until grid.size) {
             for (x in 0 until grid[y].size) {
-                print(grid[x][y])
+                print("${grid[x][y]} ")
             }
             println()
         }
