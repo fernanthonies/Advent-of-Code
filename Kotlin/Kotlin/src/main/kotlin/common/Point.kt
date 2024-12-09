@@ -26,6 +26,10 @@ class Point(var x: Int, var y: Int): Any() {
         return Point(this.x - other.x, this.y - other.y)
     }
 
+    operator fun times(other: Int): Point {
+        return Point(this.x * other, this.y * other)
+    }
+
     override fun equals(other: Any?): Boolean {
         return other is Point && other.x == x && other.y == y
     }

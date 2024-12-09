@@ -23,3 +23,7 @@ fun <T> List<T>.dropIndex(i: Int): List<T> {
 fun <T> List<T>.midpoint(): T {
     return this[this.size / 2]
 }
+
+fun <T> List<T>.cartesianProduct(other: List<T>): List<Pair<T, T>> {
+    return this.flatMap { a -> other.map { b -> a to b } }
+}

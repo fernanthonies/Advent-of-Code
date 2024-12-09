@@ -91,6 +91,12 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
                 input[y][x].toString()
             }
         }
+
+        fun fromStringInputToChar(input: List<String>): Grid<Char> {
+            return Grid(input[0].length, input.size) {x, y ->
+                input[y][x].toChar()
+            }
+        }
     }
 }
 
