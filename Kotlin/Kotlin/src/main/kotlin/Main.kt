@@ -3,7 +3,7 @@
 import common.GetData
 
 const val YEAR = 2024
-const val DAY = 8
+const val DAY = 9
 
 fun main() {
     val c = Class.forName("year${YEAR}.Days.Day${DAY}")

@@ -27,3 +27,9 @@ fun <T> List<T>.midpoint(): T {
 fun <T> List<T>.cartesianProduct(other: List<T>): List<Pair<T, T>> {
     return this.flatMap { a -> other.map { b -> a to b } }
 }
+
+fun <T> MutableList<T>.swap(first: Int, second: Int) {
+    val temp = this[first]
+    this[first] = this[second]
+    this[second] = temp
+}
