@@ -40,9 +40,6 @@ class Day9: BaseDay() {
                 }
             }
         }
-
-        //print(blocks.joinToString(""))
-        //print("\n")
         return sum.toString()
     }
 
@@ -58,13 +55,11 @@ class Day9: BaseDay() {
                 val size = c.digitToInt()
                 fileBlocks[id] = Pair(position, size)
                 position += size
-                //blocks.addAll(List(c.digitToInt()) { id.toString() })
                 id++
             } else {
                 val size = c.digitToInt()
                 freeBlocks.add(mutableListOf(position, size))
                 position += size
-                //blocks.addAll(List(c.digitToInt()) { "." })
             }
         }
 
