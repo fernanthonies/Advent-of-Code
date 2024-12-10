@@ -27,6 +27,18 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
         grid[y][x] = value
     }
 
+    fun getOrNull(x: Int, y: Int): T? {
+        return if (x in 0..<width && y in 0..<height) {
+            get(x, y)
+        } else {
+            null
+        }
+    }
+
+    fun getOrNull(point: Point): T? {
+        return getOrNull(point.x, point.y)
+    }
+
     fun rows(): List<List<T>> {
         return grid
     }
