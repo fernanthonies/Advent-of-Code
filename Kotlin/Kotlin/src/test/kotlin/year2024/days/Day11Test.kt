@@ -16,7 +16,7 @@ class Day11Test: BaseTest<Day11>(inputStringOne, inputStringOne, ::Day11) {
     @Test
     fun solvePartTwo() {
         val result = testPartTwo()
-        Assertions.assertEquals("81", result)
+        Assertions.assertEquals("55312", result)
     }
 
     private companion object {

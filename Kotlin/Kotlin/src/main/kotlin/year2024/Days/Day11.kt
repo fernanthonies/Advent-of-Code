@@ -19,13 +19,38 @@ class Day11: BaseDay() {
     override fun solvePartTwo(): String {
         val inputList = input.first().split(" ")
 
+        var stoneMap = mutableMapOf<Long, Long>()
+        inputList.forEach {
+            stoneMap[it.toLong()] = 1
+        }
 
         sum = inputList.size
         for (i in 1..75) {
-            process(tree)
+            val newMap = mutableMapOf<Long, Long>()
+            stoneMap.forEach { e ->
+                val key = e.key
+                val n = e.value
+                when {
+                    key == 0L -> {
+                        newMap[1] = newMap.getOrDefault(1, 0) + n
+                    }
+                    key.toString().length % 2 == 0 -> {
+                        val mid = key.toString().length / 2
+                        val left = key.toString().substring(0, mid).toLong()
+                        newMap[left] = newMap.getOrDefault(left, 0) + n
+                        val right = key.toString().substring(mid).toLong()
+                        newMap[right] = newMap.getOrDefault(right, 0) + n
+                    }
+                    else -> {
+                        val k = key * 2024
+                        newMap[k] = newMap.getOrDefault(k, 0) + n
+                    }
+                }
+            }
+            stoneMap = newMap
         }
 
-        return sum.toString()
+        return stoneMap.map { it.value }.reduce { acc, i -> acc + i }.toString()
     }
 
     fun build(input: List<String>): Node {

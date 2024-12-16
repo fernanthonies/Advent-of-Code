@@ -39,4 +39,11 @@ class Point(var x: Int, var y: Int): Any() {
         result = 31 * result + y
         return result
     }
+
+    enum class Direction(val p: Point) {
+        N(Point(0, -1)),
+        S(Point(0, 1)),
+        E(Point(1, 0)),
+        W(Point(-1, 0))
+    }
 }
