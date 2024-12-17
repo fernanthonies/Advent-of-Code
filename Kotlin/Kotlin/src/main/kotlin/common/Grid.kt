@@ -1,5 +1,6 @@
 package common
 
+@OptIn(ExperimentalStdlibApi::class)
 open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any() {
     protected val grid: MutableList<MutableList<T>>
 

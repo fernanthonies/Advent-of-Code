@@ -1,5 +1,7 @@
 package common
 
+import kotlin.math.abs
+
 class Point(var x: Int, var y: Int): Any() {
     fun adjacentPoints(allowDiagonal: Boolean = false, allowCross: Boolean = true): Set<Point> {
         val result = mutableSetOf<Point>()
@@ -42,8 +44,16 @@ class Point(var x: Int, var y: Int): Any() {
 
     enum class Direction(val p: Point) {
         N(Point(0, -1)),
-        S(Point(0, 1)),
         E(Point(1, 0)),
-        W(Point(-1, 0))
+        S(Point(0, 1)),
+        W(Point(-1, 0));
+
+        fun differenceTo(other: Direction): Int {
+            return when (abs(this.ordinal - other.ordinal)) {
+                0 -> 0   // Same direction
+                2 -> 2   // 180 degrees
+                else -> 1 // 90 degrees (E to N or similar)
+            }
+        }
     }
 }

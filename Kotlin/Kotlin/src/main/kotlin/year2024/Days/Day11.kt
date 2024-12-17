@@ -9,9 +9,9 @@ class Day11: BaseDay() {
         val tree = build(inputList)
 
         sum = inputList.size
-//        for (i in 1..25) {
-//            process(tree)
-//        }
+        for (i in 1..25) {
+            process(tree)
+        }
 
         return sum.toString()
     }
@@ -53,6 +53,7 @@ class Day11: BaseDay() {
         return stoneMap.map { it.value }.reduce { acc, i -> acc + i }.toString()
     }
 
+    @OptIn(ExperimentalStdlibApi::class)
     fun build(input: List<String>): Node {
         val n = Node()
         if (input.size == 1) {

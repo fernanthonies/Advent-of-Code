@@ -2,6 +2,7 @@ package year2024.Days
 
 import BaseDay
 
+@OptIn(ExperimentalStdlibApi::class)
 class Day13: BaseDay() {
     override fun solvePartOne(): String {
         var sum: Long = 0
