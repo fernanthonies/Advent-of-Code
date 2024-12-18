@@ -62,18 +62,6 @@ class Day15: BaseDay() {
             }
         }
 
-        var g = Grid(grid.first().length * 2, grid.size) { x, y ->
-            when (Point(x, y)) {
-                robit -> "@"
-                in boxes2.map { it.first } -> "["
-                in boxes2.map { it.second } -> "]"
-                in walls -> "#"
-                else -> "."
-            }
-        }
-        println(g.toString())
-        println()
-
         instructions.flatMap { it.toCharArray().toList() }.forEach { ins ->
             val dir = when(ins) {
                 '>' -> Point.Direction.E

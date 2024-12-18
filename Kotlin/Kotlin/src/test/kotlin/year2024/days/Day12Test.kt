@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import year2024.Days.Day12
 
-class Day12Test: BaseTest<Day12>(inputStringOne, inputStringOne, ::Day12) {
+class Day12Test: BaseTest<Day12>(inputStringOne, inputStringTwo, ::Day12) {
 
     @Test
     fun solvePartOne() {
@@ -16,7 +16,7 @@ class Day12Test: BaseTest<Day12>(inputStringOne, inputStringOne, ::Day12) {
     @Test
     fun solvePartTwo() {
         val result = testPartTwo()
-        Assertions.assertEquals("81", result)
+        Assertions.assertEquals("368", result)
     }
 
     private companion object {
@@ -31,5 +31,13 @@ class Day12Test: BaseTest<Day12>(inputStringOne, inputStringOne, ::Day12) {
                 "MIIIIIJJEE\n" +
                 "MIIISIJEEE\n" +
                 "MMMISSJEEE"
+
+        const val inputStringTwo =
+                "AAAAAA\n" +
+                        "AAABBA\n" +
+                        "AAABBA\n" +
+                        "ABBAAA\n" +
+                        "ABBAAA\n" +
+                        "AAAAAA\n"
     }
 }
