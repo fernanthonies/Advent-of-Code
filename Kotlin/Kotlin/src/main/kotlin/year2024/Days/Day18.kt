@@ -5,18 +5,22 @@ import common.Grid
 import common.Point
 import kotlin.math.abs
 
-class Day16: BaseDay() {
+class Day18: BaseDay() {
+    val W: Int = 71
+    val H: Int = 71
+    val steps: Int = 1024
+
     override fun solvePartOne(): String {
         var start = Point(0,0)
-        var end = Point(0,0)
-        val grid = Grid(input[0].length, input.size) {x, y ->
-            val node = input[y][x].toString()
-            when (node) {
-                "S" -> start = Point(x, y)
-                "E" -> end = Point(x, y)
-            }
-            node
+        var end = Point(W-1,H-1)
+        val grid = Grid(W, H) { _, _ -> "." }
+
+        for (i in 0..<steps) {
+            val coords = input[i].split(",").map { it.toInt() }
+            grid[Point(coords[0], coords[1])] = "#"
         }
+        println(grid.toString())
+        println()
 
         val open = mutableListOf<Node>()
         val closed = mutableSetOf<Pair<Point, Point.Direction>>()
@@ -37,7 +41,7 @@ class Day16: BaseDay() {
                 val dir = Point.Direction.fromPoint(it - q.point)!!
                 if ((grid.getOrNull(it) == "." || grid.getOrNull(it) == "E") && Pair(it, dir) !in closed) {
                     val s = Node(it, dir, q)
-                    s.g = q.g + (1 + (q.dir.differenceTo(s.dir) * 1))
+                    s.g = q.g + 1
 
                     if (s.point == end) {
                         final = s.g
@@ -53,13 +57,8 @@ class Day16: BaseDay() {
                         }
 
                         var parent = s.parent
-                        while (grid[parent!!.point] != "S") {
-                            grid[parent.point] = ANSI_BLUE + when (parent.dir) {
-                                Point.Direction.N -> "^"
-                                Point.Direction.S -> "V"
-                                Point.Direction.E -> ">"
-                                Point.Direction.W -> "<"
-                            } + ANSI_RESET
+                        while (parent != null) {
+                            grid[parent.point] = ANSI_BLUE + "O" + ANSI_RESET
                             parent = parent.parent
                         }
                         print(grid.toString())

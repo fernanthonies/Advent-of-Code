@@ -36,6 +36,18 @@ class Point(var x: Int, var y: Int): Any() {
         return other is Point && other.x == x && other.y == y
     }
 
+    fun normal(): Point {
+        return Point(0,0).apply {
+            x = if (x != 0) this.x / abs(this.x) else 0
+            y = if (y != 0) this.y / abs(this.y) else 0
+        }
+    }
+
+    fun normalize() {
+        x = if (x != 0) this.x / abs(this.x) else 0
+        y = if (y != 0) this.y / abs(this.y) else 0
+    }
+
     override fun hashCode(): Int {
         var result = x
         result = 31 * result + y
