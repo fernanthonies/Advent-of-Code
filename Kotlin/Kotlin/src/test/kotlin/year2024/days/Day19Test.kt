@@ -12,7 +12,7 @@ class Day19Test: BaseTest<Day19>(inputStringOne, inputStringTwo, ::Day19) {
     @Test
     fun solvePartOne() {
         val result = testPartOne()
-        Assertions.assertEquals("", result)
+        Assertions.assertEquals("6", result)
     }
 
     @Test
@@ -22,7 +22,16 @@ class Day19Test: BaseTest<Day19>(inputStringOne, inputStringTwo, ::Day19) {
     }
 
     private companion object {
-        const val inputStringOne = ""
+        const val inputStringOne = "r, wr, b, g, bwu, rb, gb, br\n" +
+                "\n" +
+                "brwrr\n" +
+                "bggr\n" +
+                "gbbr\n" +
+                "rrbgbr\n" +
+                "ubwu\n" +
+                "bwurrg\n" +
+                "brgr\n" +
+                "bbrgwb"
 
         const val inputStringTwo = ""
     }

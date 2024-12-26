@@ -26,3 +26,11 @@ fun String.EqualsWithTolerance(other: String, tolerance: Int): Boolean {
     }
     return true
 }
+
+fun String.SafeSubstring(startIndex: Int): String {
+    return if (startIndex < this.length) {
+        this.substring(startIndex)
+    } else {
+        this
+    }
+}
