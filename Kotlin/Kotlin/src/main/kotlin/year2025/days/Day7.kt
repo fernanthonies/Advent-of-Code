@@ -1,8 +1,8 @@
-package year2025.Days
+package year2025.days
 
 import BaseDay
 
-class Day4: BaseDay() {
+class Day7: BaseDay() {
     override fun solvePartOne(): String {
         return ""
     }

@@ -1,7 +1,6 @@
-package year2025.Days
+package year2025.days
 
 import BaseDay
-import kotlin.math.abs
 
 class Day1 : BaseDay() {
     override fun solvePartOne(): String {

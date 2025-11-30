@@ -1,9 +1,8 @@
-package year2025.Days
+package year2025.days
 
 import BaseDay
-import common.midpoint
 
-class Day5: BaseDay() {
+class Day2: BaseDay() {
     override fun solvePartOne(): String {
         return ""
     }

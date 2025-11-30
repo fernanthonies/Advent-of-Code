@@ -1,9 +1,8 @@
-package year2025.Days
+package year2025.days
 
 import BaseDay
-import common.swap
 
-class Day9: BaseDay() {
+class Day3: BaseDay() {
     override fun solvePartOne(): String {
         return ""
     }

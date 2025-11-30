@@ -1,10 +1,8 @@
-package year2025.Days
+package year2025.days
 
 import BaseDay
-import common.Grid
-import common.Point
 
-class Day6: BaseDay() {
+class Day10: BaseDay() {
     override fun solvePartOne(): String {
         return ""
     }

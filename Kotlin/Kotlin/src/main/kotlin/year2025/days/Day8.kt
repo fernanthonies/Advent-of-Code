@@ -1,9 +1,6 @@
-package year2025.Days
+package year2025.days
 
 import BaseDay
-import common.Grid
-import common.Point
-import common.cartesianProduct
 
 class Day8: BaseDay() {
     override fun solvePartOne(): String {
