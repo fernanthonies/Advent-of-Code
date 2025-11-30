@@ -32,14 +32,14 @@ fun manhattanDistance(p1: Point, p2: Point): Int {
 }
 
 fun modPow(base: Long, exponent: Long, modulus: Long): Long {
-    if (modulus == 1) return 0
+    if (modulus == 1L) return 0
 
-    var result = 1
+    var result = 1L
     var exp = exponent
     var currentBase = base % modulus
 
     while (exp > 0) {
-        if (exp % 2 == 1) {
+        if (exp % 2 == 1L) {
             result = (result * currentBase) % modulus
         }
         currentBase = (currentBase * currentBase) % modulus
@@ -63,7 +63,7 @@ fun modInversePrime(a: Long, prime: Long): Long {
 }
 
 fun extendedGcd(a: Long, b: Long): Triple<Long, Long, Long> {
-    if (b == 0) return Triple(a, 1, 0)
+    if (b == 0L) return Triple(a, 1, 0)
 
     val (gcd, x1, y1) = extendedGcd(b, a % b)
     val x = y1

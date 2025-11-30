@@ -19,13 +19,13 @@ class Day8: BaseDay() {
             }
         }
 
-        antennas.forEach {
-            it.value.cartesianProduct(it.value).filter { pair -> pair.first != pair.second }.forEach { pair ->
-                val distance = pair.second - pair.first
-                antinodes.add(pair.first - distance)
-                antinodes.add(pair.second + distance)
-            }
-        }
+//        antennas.forEach {
+//            it.value.cartesianProduct(it.value).filter { pair -> pair.first != pair.second }.forEach { pair ->
+//                val distance = pair.second - pair.first
+//                antinodes.add(pair.first - distance)
+//                antinodes.add(pair.second + distance)
+//            }
+//        }
         return antinodes.filter { isPointValid(it) }.size.toString()
     }
 
@@ -40,16 +40,16 @@ class Day8: BaseDay() {
             }
         }
 
-        antennas.forEach {
-            it.value.cartesianProduct(it.value).filter { pair -> pair.first != pair.second }.forEach { pair ->
-                // this isn't really all that efficient, but the problem space is small enough to not really worry about it ¯\_(ツ)_/¯
-                for (i in 0..grid.height) {
-                    val distance = (pair.second - pair.first) * i
-                    antinodes.add(pair.first - distance)
-                    antinodes.add(pair.second + distance)
-                }
-            }
-        }
+//        antennas.forEach {
+//            it.value.cartesianProduct(it.value).filter { pair -> pair.first != pair.second }.forEach { pair ->
+//                // this isn't really all that efficient, but the problem space is small enough to not really worry about it ¯\_(ツ)_/¯
+//                for (i in 0..grid.height) {
+//                    val distance = (pair.second - pair.first) * i
+//                    antinodes.add(pair.first - distance)
+//                    antinodes.add(pair.second + distance)
+//                }
+//            }
+//        }
 
         return antinodes.filter { isPointValid(it) }.size.toString()
     }
