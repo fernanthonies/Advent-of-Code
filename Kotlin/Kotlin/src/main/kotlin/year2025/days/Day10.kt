@@ -1,4 +1,4 @@
-package year2025.days
+package year2025.Days
 
 import BaseDay
 
