@@ -12,7 +12,7 @@ fun String.mirroredOnPivot(pivot: Int): Boolean {
     return left == right
 }
 
-fun String.EqualsWithTolerance(other: String, tolerance: Int): Boolean {
+fun String.equalsWithTolerance(other: String, tolerance: Int): Boolean {
     if (this.length != other.length) {
         return false
     }
@@ -27,10 +27,17 @@ fun String.EqualsWithTolerance(other: String, tolerance: Int): Boolean {
     return true
 }
 
-fun String.SafeSubstring(startIndex: Int): String {
+fun String.safeSubstring(startIndex: Int): String {
     return if (startIndex < this.length) {
         this.substring(startIndex)
     } else {
         this
     }
+}
+
+fun String.splitInHalf(): Pair<String, String> {
+    val length = this.length
+    val midPoint = length / 2
+
+    return Pair(this.take(midPoint), this.takeLast(midPoint))
 }
