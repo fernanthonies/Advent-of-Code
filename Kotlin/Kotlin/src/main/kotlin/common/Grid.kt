@@ -2,12 +2,8 @@ package common
 
 @OptIn(ExperimentalStdlibApi::class)
 open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any() {
-    protected val grid: MutableList<MutableList<T>>
-
-    init {
-        grid = MutableList(height) { y ->
-            MutableList(width) { x -> init(x, y) }
-        }
+    protected val grid: MutableList<MutableList<T>> = MutableList(height) { y ->
+        MutableList(width) { x -> init(x, y) }
     }
 
     constructor(source: Grid<T>) : this(source.width, source.height, { x, y -> source[y, x]})
@@ -72,8 +68,28 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
         }
     }
 
+    fun count(func: (T, p: Point) -> Boolean): Int {
+        var result = 0
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                if (func(p, Point(x, y))) result += 1
+            }
+        }
+        return result
+    }
+
+    fun count(func: (T, x: Int, y: Int) -> Boolean): Int {
+        var result = 0
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                if (func(p, x, y)) result += 1
+            }
+        }
+        return result
+    }
+
     override fun toString(): String {
-        var s: String = ""
+        var s = ""
         for (y in grid) {
             for (x in y) {
                 s += x
