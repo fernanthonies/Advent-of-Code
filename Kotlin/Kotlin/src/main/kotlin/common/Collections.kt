@@ -33,3 +33,9 @@ fun <T> MutableList<T>.swap(first: Int, second: Int) {
     this[first] = this[second]
     this[second] = temp
 }
+
+fun <T> Collection<T>.splitOn(value: T): Pair<Collection<T>, Collection<T>> {
+    val index = this.indexOfFirst { it == value }
+
+    return Pair(this.take(index), this.drop(index + 1))
+}

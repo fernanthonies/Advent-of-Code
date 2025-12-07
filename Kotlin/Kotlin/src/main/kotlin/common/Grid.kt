@@ -7,22 +7,11 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
     }
 
     constructor(source: Grid<T>) : this(source.width, source.height, { x, y -> source[y, x]})
+    constructor(source: List<List<T>>) : this(source[0].size, source.size, { x, y -> source[y][x] })
 
-    operator fun get(point: Point): T {
-        return get(point.x, point.y)
-    }
+    operator fun get(point: Point): T = get(point.x, point.y)
 
-    operator fun set(point: Point, value: T) {
-        set(point.x, point.y, value)
-    }
-
-    operator fun get(x: Int, y: Int): T {
-        return grid[y][x]
-    }
-
-    operator fun set(x: Int, y: Int, value: T) {
-        grid[y][x] = value
-    }
+    operator fun get(x: Int, y: Int): T = grid[y][x]
 
     fun getOrNull(x: Int, y: Int): T? {
         return if (x in 0..<width && y in 0..<height) {
@@ -32,17 +21,17 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
         }
     }
 
-    fun getOrNull(point: Point): T? {
-        return getOrNull(point.x, point.y)
+    fun getOrNull(point: Point): T? = getOrNull(point.x, point.y)
+
+    operator fun set(point: Point, value: T) = set(point.x, point.y, value)
+
+    operator fun set(x: Int, y: Int, value: T) {
+        grid[y][x] = value
     }
 
-    fun rows(): List<List<T>> {
-        return grid
-    }
+    fun rows(): List<List<T>> = grid
 
-    fun columns(): List<List<T>> {
-        return transpose().rows()
-    }
+    fun columns(): List<List<T>> = transpose().rows()
 
     fun forEach(func: (T) -> Unit) {
         grid.forEach { col ->
