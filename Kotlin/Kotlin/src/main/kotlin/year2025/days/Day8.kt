@@ -4,6 +4,7 @@ import BaseDay
 import common.Point3
 import common.euclideanDistance
 import kotlin.math.abs
+import kotlin.math.pow
 
 class Day8: BaseDay() {
     override fun solvePartOne(): String {
@@ -11,10 +12,10 @@ class Day8: BaseDay() {
             val (x, y, z) = it.split(",").map { s -> s.toInt() }
             Point3(x, y, z)
         }
-        val distances = mutableMapOf<Double, Pair<Int, Int>>()
+        val distances = mutableMapOf<Int, Pair<Int, Int>>()
         for (i in 0..points.size - 1) {
             for (j in i..points.size - 1) {
-                if (i != j) distances.put(abs(euclideanDistance(points[i], points[j])), Pair(i, j))
+                if (i != j) distances.put(abs(euclideanDistance(points[i], points[j]).pow(2).toInt()), Pair(i, j))
             }
         }
         val circuits = mutableListOf<MutableSet<Int>>()
@@ -52,10 +53,10 @@ class Day8: BaseDay() {
             val (x, y, z) = it.split(",").map { s -> s.toInt() }
             Point3(x, y, z)
         }
-        val distances = mutableMapOf<Double, Pair<Int, Int>>()
+        val distances = mutableMapOf<Int, Pair<Int, Int>>()
         for (i in 0..points.size - 1) {
             for (j in i..points.size - 1) {
-                if (i != j) distances.put(abs(euclideanDistance(points[i], points[j])), Pair(i, j))
+                if (i != j) distances.put(abs(euclideanDistance(points[i], points[j]).pow(2).toInt()), Pair(i, j))
             }
         }
         val circuits = mutableListOf<MutableSet<Int>>()
