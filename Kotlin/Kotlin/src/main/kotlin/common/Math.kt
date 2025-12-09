@@ -1,6 +1,8 @@
 package common
 
 import kotlin.math.abs
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 fun gcd(a: Long, b: Long): Long {
     if (b == 0.toLong()) return a
@@ -29,6 +31,21 @@ fun lcmOfArray(arr: LongArray): Long {
 
 fun manhattanDistance(p1: Point, p2: Point): Int {
     return (abs(p1.x - p2.x) + abs(p1.y - p2.y))
+}
+
+fun euclideanDistance(p1: Point, p2: Point): Double {
+    return sqrt(
+        (p2.x - p1.x).toDouble().pow(2) +
+        (p2.y - p1.y).toDouble().pow(2)
+    )
+}
+
+fun euclideanDistance(p1: Point3, p2: Point3): Double {
+    return sqrt(
+        (p2.x - p1.x).toDouble().pow(2) +
+        (p2.y - p1.y).toDouble().pow(2) +
+        (p2.z - p1.z).toDouble().pow(2)
+    )
 }
 
 fun modPow(base: Long, exponent: Long, modulus: Long): Long {
