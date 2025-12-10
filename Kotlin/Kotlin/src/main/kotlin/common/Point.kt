@@ -54,6 +54,22 @@ class Point(var x: Int, var y: Int): Any() {
         return result
     }
 
+    fun inBox(box: List<Point>): Boolean {
+        return x in box.minOfOrNull { it.x }!!..box.maxOfOrNull { it.x }!! &&
+                y in box.minOfOrNull { it.y }!!..box.maxOfOrNull { it.y }!!
+    }
+
+    fun ccw(other: Point): Boolean {
+        val crossProduct = (x * other.y) - (y * other.x)
+        return if (crossProduct > 0) {
+            true
+        } else if (crossProduct < 0) {
+            false
+        } else {
+            false
+        }
+    }
+
     enum class Direction(val p: Point) {
         N(Point(0, -1)) {
             override fun cw(): Direction = E
