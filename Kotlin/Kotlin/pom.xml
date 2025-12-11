@@ -124,6 +124,12 @@
             <version>1.9.25</version>
             <scope>runtime</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/tools.aqua/z3-turnkey -->
+        <dependency>
+            <groupId>tools.aqua</groupId>
+            <artifactId>z3-turnkey</artifactId>
+            <version>4.14.1</version>
+        </dependency>
 
 
     </dependencies>
