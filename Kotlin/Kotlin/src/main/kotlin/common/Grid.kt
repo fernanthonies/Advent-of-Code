@@ -1,5 +1,7 @@
 package common
 
+import com.sun.org.apache.xpath.internal.operations.Bool
+
 @OptIn(ExperimentalStdlibApi::class)
 open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any() {
     protected val grid: MutableList<MutableList<T>> = MutableList(height) { y ->
@@ -31,7 +33,7 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
 
     fun rows(): List<List<T>> = grid
 
-    fun columns(): List<List<T>> = transpose().rows()
+    fun columns(): List<List<T>> = transposed().rows()
 
     fun forEach(func: (T) -> Unit) {
         grid.forEach { col ->
@@ -55,6 +57,51 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
                 func(p, x, y)
             }
         }
+    }
+
+    fun any(func: (T) -> Boolean): Boolean {
+        grid.forEach { col ->
+            col.forEach { p ->
+                if (func(p)) return true
+            }
+        }
+        return false
+    }
+
+    fun anyIndexed(func: (T, p: Point) -> Boolean): Boolean {
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                if (func(p, Point(x, y))) return true
+            }
+        }
+        return false
+    }
+
+    fun first(func: (T) -> Boolean): T? {
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                if (func(p)) return p
+            }
+        }
+        return null
+    }
+
+    fun firstIndexed(func: (T, p: Point) -> Boolean): T? {
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                if (func(p, Point(x, y))) return p
+            }
+        }
+        return null
+    }
+
+    fun firstIndex(func: (T, p:Point) -> Boolean): Point? {
+        grid.forEachIndexed { y, col ->
+            col.forEachIndexed { x, p ->
+                if (func(p, Point(x, y))) return Point(x, y)
+            }
+        }
+        return null
     }
 
     fun count(func: (T, p: Point) -> Boolean): Int {
@@ -88,16 +135,22 @@ open class Grid<T>(val width: Int, val height: Int, init: (Int, Int) -> T): Any(
         return s
     }
 
-    fun transpose(): Grid<T> {
+    fun transposed(): Grid<T> {
         return Grid(height, width) { x, y ->
-            grid[x][y]
+            get(y, x)
+        }
+    }
+
+    fun rotated(): Grid<T> {
+        return Grid(height, width) { x, y ->
+            get(y, width - 1 - x)
         }
     }
 
     fun print() {
         for (y in 0 until grid.size) {
             for (x in 0 until grid[y].size) {
-                print("${grid[x][y]} ")
+                print("${grid[y][x]} ")
             }
             println()
         }

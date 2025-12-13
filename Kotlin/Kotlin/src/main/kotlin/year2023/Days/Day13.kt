@@ -17,7 +17,7 @@ class Day13: BaseDay() {
             solution = findGridSolution(grid)
 
             if (solution == -1) {
-                solution = findGridSolution(grid.transpose())
+                solution = findGridSolution(grid.transposed())
                 result += solution * 100
             } else {
                 result += solution
@@ -54,7 +54,7 @@ class Day13: BaseDay() {
                     solution = findGridSolution(grid, partOneSolutions[g])
 
                     if (solution == -1) {
-                        solution = findGridSolution(grid.transpose(), partOneSolutions[g])
+                        solution = findGridSolution(grid.transposed(), partOneSolutions[g])
                         if (solution == -1) {
                             continue@innerGridLoop
                         }
